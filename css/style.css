@@ -414,7 +414,8 @@ a.circle:hover {
 
 @media only screen
 and (min-width : 325px)
-and (max-width: 667px) {
+and (max-width: 667px)
+and (orientation : portrait){
 
 .gif {
   width: 90%;
