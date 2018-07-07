@@ -408,37 +408,14 @@ a.circle:hover {
 
 
 
-@media only screen and (min-width: 425px) {
-  /*
-   * .page-content should at most be 80% of the width of the page
-   * margins should be automatically determined by the browser
-   */
+/* Media */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+.gif {
+  width: 300px;
 }
 
-/*iPad*/
-@media only screen and (max-width: 768px) {
-
-  #navigation {
-    display: none;
-  }
-  #hamburger {
-    display: inline-block;
-  }
-
-@media only screen and (min-width: 768px) {
-  #hamburger {
-    display: none;
-  }
 
 }
-
-/*
-footer {
-height: 100px;
-padding-top: 20px;
-display: block;
-margin-top: 20px;
-box-sizing: border-box;
-width: 100%;
-}
-*/

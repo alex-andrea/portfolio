@@ -441,26 +441,10 @@ a.search{
 
 
 /* Media */
-@media only screen and (min-width: 425px) {
-  /*
-   * .page-content should at most be 80% of the width of the page
-   * margins should be automatically determined by the browser
-   */
-}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+/* STYLES GO HERE */
 
-/*iPad*/
-@media only screen and (max-width: 768px) {
-
-  #navigation {
-    display: none;
-  }
-  #hamburger {
-    display: inline-block;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #hamburger {
-    display: none;
-  }
 
 }
