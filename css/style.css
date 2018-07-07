@@ -422,8 +422,13 @@ and (orientation : portrait){
   padding-top: 12% !important;
 }
 
+.header {
+    height: 66px;
+}
+
 .section1 {
   width: 100vw;
+  background-position: center 60px;
 }
 
 .hamb {
@@ -439,7 +444,7 @@ and (orientation : portrait){
     margin-top: 5;
     font-size: 9;
     position: fixed;
-    bottom: 12%;
+    top: 79%;
     color: #000000;
     font-weight: 200;
   }
@@ -449,7 +454,7 @@ and (orientation : portrait){
     border-left: 1px solid black;
     margin-left: 50%;
     position: fixed;
-    bottom: 15%;
+    top: 75%;
   }
 
 .leftside {
