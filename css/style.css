@@ -257,7 +257,7 @@ body {
 
 .section1 {
   position: fixed;
-  background-image: url("../images/ricardoresende.jpg");
+  background-image: url("../Images/ricardoresende.jpg");
   background-repeat: no-repeat;
   background-position: center 80px;
   background-size: cover;
@@ -293,7 +293,7 @@ body {
 .rightside {
   align-items: center;
   display: flex;
-  background-image: url("../images/IMG_5829.jpg");
+  background-image: url("../Images/IMG_5829.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
