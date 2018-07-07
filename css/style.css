@@ -24,6 +24,18 @@
   100% { opacity: 1; }
 }
 
+@font-face {
+  font-family: 'Kiona';
+  src: url('../Fonts/Kiona.ttf');
+  src: url('../Fonts/Kiona.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'BanglaMN';
+  src: url('../Fonts/BanglaMN.ttf');
+  src: url('../Fonts/BanglaMN.ttf')  format('truetype');
+}
+
 .wrapper {
   -webkit-animation: fadeIn 1s; /* Safari 4+ */
   -moz-animation: fadeIn 1s; /* Fx 5+ */
