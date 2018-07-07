@@ -409,12 +409,24 @@ a.circle:hover {
 
 
 /* Media */
+
 @media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
+and (min-width : 320px)
+and (max-width: 667px) {
 
 .gif {
-  width: 300px;
+  width: 75%;
+}
+
+.section1 {
+  height: 100%;
+}
+
+.search {
+    padding-top: 27px;
+    padding-right: 10;
+    position: absolute;
+    right: 32px;
 }
 
 
