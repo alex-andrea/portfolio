@@ -10,14 +10,14 @@
 
 @font-face {
   font-family: 'Kiona';
-  src: url('../Fonts/kiona.ttf');
-  src: url('../Fonts/kiona.ttf')  format('truetype');
+  src: url('../Fonts/Kiona.ttf');
+  src: url('../Fonts/Kiona.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'BanglaMN';
-  src: url('../Fonts/banglamn.ttf');
-  src: url('../Fonts/banglamn.ttf')  format('truetype');
+  src: url('../Fonts/BanglaMN.ttf');
+  src: url('../Fonts/BanglaMN.ttf')  format('truetype');
 }
 
 
