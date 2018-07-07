@@ -44,6 +44,8 @@
     <div class="container-fluid section1">
       <a href="search" class="search"><i class="fas fa-search"></i></a>
 
+      <img class="hamb" src="Images/Hambg.png">
+
       <div class="row header">
       <div class="col">
 
@@ -241,6 +243,21 @@
       $('.delay').removeClass("slide-up-fade-in");
       // $('.delay').hide();
   }
+});
+
+
+
+$(document).ready(function() {
+ if (location.hash == '#about2') {
+   console.log(location.hash);
+   var hash2 = location.hash;
+   console.log(hash2);
+   $('html, body').animate({
+     scrollTop: $(hash2).offset().top
+   }, 800, function(){
+     console.log("IT WURKED");
+ });
+};
 });
   </script>
 
