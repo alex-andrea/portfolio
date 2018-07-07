@@ -444,7 +444,7 @@ and (orientation : portrait){
     margin-top: 5;
     font-size: 9;
     position: fixed;
-    top: 577px;
+    top: 567px;
     color: #000000;
     font-weight: 200;
   }
@@ -454,7 +454,7 @@ and (orientation : portrait){
     border-left: 1px solid black;
     margin-left: 50%;
     position: fixed;
-    top: 550px;
+    top: 540px;
   }
 
 .leftside {
