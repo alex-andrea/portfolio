@@ -434,6 +434,11 @@ and (orientation : portrait){
   background-repeat: no-repeat;
 }
 
+.section2 {
+  padding: 0 !important;
+  vertical-align: middle;
+}
+
 .site-nav {
   display: inline;
   padding-top: 24px;
@@ -461,11 +466,16 @@ and (orientation : portrait){
   }
 
 .leftside {
-  margin-bottom:0;
+  margin-bottom:7%;
+  margin-top: 3%;
 }
 
 .rightside {
   display: none;
+}
+
+.circle {
+  left: 42.7%
 }
 
 .search {
