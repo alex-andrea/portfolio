@@ -29,6 +29,7 @@
 
     <!-- CSS Stylsheet -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/hamburger.css" type="text/css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,300i,400,600i,700" rel="stylesheet">
@@ -41,10 +42,25 @@
     <!-- Header -->
     <div class="wrapper">
     <a id="top"></a>
+    
+    <!-- Hamburger -->
+    <nav class="site-nav">
+
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+      <ul class="open desktop">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#!">Contact</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li><a href="uxui.html">UX/UI</a></li>
+
+      </ul>
+    </nav>
+
     <div class="container-fluid section1">
       <a href="search"><img src="Images/Search.png" class="search"></i></a>
-
-      <img class="hamb" src="Images/Hambg.png">
 
       <div class="row header">
       <div class="col">
@@ -167,6 +183,18 @@
 <script src="js/quotes.js"></script>
 
 <!-- JavaScript -->
+
+<!-- Hamburger Menu -->
+<script type="text/javascript">
+$('.menu-toggle').click(function() {
+
+  $('ul').toggleClass('opening');
+  $(this).toggleClass('open');
+
+});
+</script>
+
+
       <!-- Link hover effect -->
       <script type="text/javascript">
 
