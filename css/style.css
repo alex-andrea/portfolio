@@ -298,8 +298,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0;
-  margin-bottom:4%;
+  padding: 0 3% 0 3%;
+  margin-bottom:2%;
 }
 
 .rightside {
@@ -461,7 +461,7 @@ and (orientation : portrait){
   }
 
 .leftside {
-  display: no
+  margin-bottom:0;
 }
 
 .rightside {
@@ -473,6 +473,10 @@ and (orientation : portrait){
   position: absolute;
   width: 33px;
   right: 10px;
+}
+
+h2 {
+  font-size: 50;
 }
 
 .navlink {
