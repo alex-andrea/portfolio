@@ -429,6 +429,8 @@ and (orientation : portrait){
 .section1 {
   width: 100vw;
   background-position: center 60px;
+  background-image: url("../Images/ricardoresendesm.jpg");
+  background-repeat: no-repeat;
 }
 
 .hamb {
@@ -444,7 +446,7 @@ and (orientation : portrait){
     margin-top: 5;
     font-size: 9;
     position: fixed;
-    top: 538px;
+    top: 528px;
     color: #000000;
     font-weight: 200;
   }
@@ -454,7 +456,7 @@ and (orientation : portrait){
     border-left: 1px solid black;
     margin-left: 50%;
     position: fixed;
-    top: 510px;
+    top: 500px;
   }
 
 .leftside {
@@ -466,11 +468,10 @@ and (orientation : portrait){
 }
 
 .search {
-  padding-top: 22px;
-  font-weight: lighter;
+  padding-top: 20px;
   position: absolute;
-  right: 24px;
-  font-size: 21px;
+  width: 33px;
+  right: 10px;
 }
 
 .navlink {
