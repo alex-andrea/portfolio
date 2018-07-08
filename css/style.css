@@ -467,7 +467,7 @@ and (orientation : portrait){
 
 .leftside {
   margin-bottom:7%;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .rightside {
@@ -475,7 +475,9 @@ and (orientation : portrait){
 }
 
 .circle {
-  left: 42.7%
+  left: 42.7%;
+  bottom: 60px;
+  top: auto;
 }
 
 .search {
