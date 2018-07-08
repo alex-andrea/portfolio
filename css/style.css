@@ -418,7 +418,7 @@ a.circle:hover {
 }
 
 .view {
-  
+
 }
 
 /* Media */
@@ -480,8 +480,8 @@ and (orientation : portrait){
   }
 
 .leftside {
-  margin-bottom:7%;
-  margin-top: 5%;
+  margin-top: 8%;
+  padding: 0 !important;
 }
 
 .rightside {
