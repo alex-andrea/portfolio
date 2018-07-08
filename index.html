@@ -38,16 +38,6 @@
   </head>
 
   <body>
-<!-- Switch row for mobile -->
-<script type="text/javascript">
-
-  $(window).on('load, resize', function mobileViewUpdate() {
-    var viewportWidth = $(window).width();
-    if (viewportWidth < 670) {
-        $(".view").removeClass("row").addClass("clearfix");
-    }
-});
-</script>
 
 
 
@@ -213,12 +203,6 @@
 
 <!-- Hamburger Menu -->
 <script type="text/javascript">
-// $('.menu-toggle').click(function() {
-//
-//   $('ul').toggleClass('opening');
-//   $(this).toggleClass('open');
-//
-// });
 
 $("#menu-button").click(function(){
   $(this).toggleClass("active");
@@ -228,6 +212,17 @@ $("#menu-button").click(function(){
   $("#menu").slideToggle("slow");
 });
 
+</script>
+
+<!-- Switch row for mobile -->
+<script type="text/javascript">
+
+  $(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 670) {
+        $(".view").removeClass("row").addClass("clearfix");
+    }
+});
 </script>
 
 
