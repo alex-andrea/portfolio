@@ -45,10 +45,10 @@ nav a:hover, nav a:focus { background: #E4B363; }
 
 
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   padding: 0;
   top: 31px;
-  right: 10px;
+  left: 20px;
   cursor: pointer;
 }
 
