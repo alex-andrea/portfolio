@@ -38,17 +38,44 @@
   </head>
 
   <body>
+<!-- Switch row for mobile -->
+<script type="text/javascript">
+
+  $(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 670) {
+        $(".view").removeClass("row").addClass("clearfix");
+    }
+});
+</script>
+
+
 
     <!-- Header -->
     <div class="wrapper">
     <a id="top"></a>
 
+    <!-- Hamburger -->
 
+    <div id="menu-button">
+      <div id="line-1"></div>
+      <div id="line-2"></div>
+      <div id="line-3"></div>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#!">Contact</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li><a href="uxui.html">UX/UI</a></li>
+      </ul>
+    </div>
 
     <div class="container-fluid section1">
 
-      <!-- Hamburger -->
-      <nav class="site-nav">
+
+
+      <!-- <nav class="site-nav">
 
         <div class="menu-toggle">
           <div class="hamburger"></div>
@@ -61,7 +88,7 @@
           <li><a href="uxui.html">UX/UI</a></li>
 
         </ul>
-      </nav>
+      </nav> -->
 
       <a href="search"><img src="Images/Search.png" class="search"></i></a>
 
@@ -124,7 +151,7 @@
 <!--Section 2 !-->
 <div class="container-fluid section2">
   <a id="about"></a>
-  <div class="row">
+  <div class="row view">
     <div class="col-sm-6 leftside">
     <div class="col-flex delay">
       <h2 style="margin-bottom:3%;">About Me</h2>
@@ -186,12 +213,21 @@
 
 <!-- Hamburger Menu -->
 <script type="text/javascript">
-$('.menu-toggle').click(function() {
+// $('.menu-toggle').click(function() {
+//
+//   $('ul').toggleClass('opening');
+//   $(this).toggleClass('open');
+//
+// });
 
-  $('ul').toggleClass('opening');
-  $(this).toggleClass('open');
-
+$("#menu-button").click(function(){
+  $(this).toggleClass("active");
+  $("#line-1").toggleClass("active");
+  $("#line-2").toggleClass("active");
+  $("#line-3").toggleClass("active");
+  $("#menu").slideToggle("slow");
 });
+
 </script>
 
 

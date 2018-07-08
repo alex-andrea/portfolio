@@ -409,6 +409,14 @@ a.circle:hover {
 }
 
 
+#menu {
+  display: none;
+}
+
+#menu-button {
+  display: none;
+}
+
 
 
 /* Media */
@@ -429,6 +437,7 @@ and (orientation : portrait){
 
 .section1 {
   width: 100vw;
+  height: 100vh;
   background-position: center 60px;
   background-image: url("../Images/ricardoresendesm.jpg");
   background-repeat: no-repeat;
@@ -437,16 +446,19 @@ and (orientation : portrait){
 .section2 {
   padding: 0 !important;
   vertical-align: middle;
+  z-index: 3;
+  margin: 0 !important;
 }
 
-.site-nav {
+/* .site-nav {
   display: inline;
   padding-top: 24px;
   padding-right: 10;
   position: absolute;
   left: 22px;
   width: 36px;
-}
+} */
+
 
 .scroll {
     margin-top: 5;
@@ -481,9 +493,9 @@ and (orientation : portrait){
 }
 
 .search {
-  padding-top: 20px;
+  padding-top: 26px;
   position: absolute;
-  width: 33px;
+  width: 23px;
   right: 10px;
 }
 
