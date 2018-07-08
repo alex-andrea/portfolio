@@ -251,7 +251,7 @@ h3 {
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   display: block;
   color: #615656;
@@ -480,7 +480,7 @@ and (orientation : portrait){
   }
 
 .leftside {
-  margin-top: 8%;
+  margin-top: 10%;
   padding: 0 !important;
 }
 
@@ -506,9 +506,12 @@ h2 {
 }
 
 .quotes {
-  font-size: 12 !important;
+  font-size: 13 !important;
 }
 
+.info {
+  font-size:13 !important;
+ }
 
 .navlink {
   display: none;
