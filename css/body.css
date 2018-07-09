@@ -105,7 +105,10 @@ a:hover{
   position: relative;
 }
 
-
+#title2 {
+  margin-top:140px;
+  line-height:0.3;
+}
 .popover {
   top: 11px !important;
   border: none !important;
@@ -202,11 +205,6 @@ body {
   font-style: normal;
   display: block;
   color: #000000;
-  /* background-image: url("../images/ricardoresende.jpg");
-  background-repeat: no-repeat;
-  background-position: center 80px;
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
 /* .layer {
@@ -270,7 +268,7 @@ body {
   border-radius: 50%;
   position: fixed;
   bottom: 9%;
-  left: 93%;
+  right: 7%;
   z-index: 100;
   display: block;
   line-height: 1.2;
@@ -343,6 +341,9 @@ a.circle:hover {
   width: 100%;
 }
 
+.grow {
+  width: 53%;
+}
 
 .grow:hover {
   -webkit-transform:scale(1.02);
@@ -507,9 +508,8 @@ and (orientation : portrait){
 }
 
 .circle {
-  rightt: 10%;
-  bottom: 50px;
-  top: auto;
+    bottom: 5%;
+    right: 5%;
 }
 
 .content {
@@ -518,6 +518,20 @@ and (orientation : portrait){
 
 .row {
   margin: 0 !important;
+}
+
+.grow {
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20;
+  text-align: center;
+}
+
+#title2 {
+  margin-top:90px;
 }
 
 }
