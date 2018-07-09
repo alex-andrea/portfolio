@@ -8,14 +8,19 @@
 
 
 <url>
-  <loc>https://alandrea.github.io/alexandrea/index.html</loc>
-  <lastmod>2018-07-07T19:35:26+00:00</lastmod>
+  <loc>https://alex-andrea.github.io/portfolio/</loc>
+  <lastmod>2018-07-09T01:30:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://alandrea.github.io/alexandrea/uxui.html</loc>
-  <lastmod>2018-07-07T19:35:26+00:00</lastmod>
+  <loc>https://alex-andrea.github.io/portfolio/uxui.html</loc>
+  <lastmod>2018-07-09T01:30:57+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alex-andrea.github.io/portfolio/index.html</loc>
+  <lastmod>2018-07-09T01:30:57+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
