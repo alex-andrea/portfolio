@@ -460,14 +460,13 @@ and (orientation : portrait){
 .header {
     height: 66px;
     position: fixed;
-    left: 0;
 }
 
 .search {
   padding-top: 26px;
   position: fixed;
   width: 23px;
-  right: 10px;
+  right: 25px;
 }
 
 .navlink {
@@ -509,6 +508,13 @@ and (orientation : portrait){
   rightt: 10%;
   bottom: 50px;
   top: auto;
+}
+
+.content {
+    padding: 7% 4%;
+
+.row {
+  margin: 0 !important;
 }
 
 }
