@@ -466,7 +466,7 @@ and (orientation : portrait){
   padding-top: 26px;
   position: fixed;
   width: 23px;
-  right: 25px;
+  right: 10px;
 }
 
 .navlink {
