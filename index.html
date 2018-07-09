@@ -46,7 +46,7 @@
     <a id="top"></a>
 
     <!-- Hamburger -->
-
+<nav>
     <div id="menu-button">
       <div id="line-1"></div>
       <div id="line-2"></div>
@@ -54,31 +54,16 @@
     </div>
     <div id="menu">
       <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about" class="about">About Me</a></li>
         <li><a href="#!">Contact</a></li>
         <li><a href="#!">Blog</a></li>
         <li><a href="uxui.html">UX/UI</a></li>
       </ul>
     </div>
-
+</nav>
     <div class="container-fluid section1">
 
 
-
-      <!-- <nav class="site-nav">
-
-        <div class="menu-toggle">
-          <div class="hamburger"></div>
-        </div>
-
-        <ul class="open desktop">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#!">Contact</a></li>
-          <li><a href="#!">Blog</a></li>
-          <li><a href="uxui.html">UX/UI</a></li>
-
-        </ul>
-      </nav> -->
 
       <a href="search"><img src="Images/Search.png" class="search"></i></a>
 
@@ -212,6 +197,10 @@ $("#menu-button").click(function(){
   $("#menu").slideToggle("slow");
 });
 
+$("nav li .about").click(function () {
+    $("#menu").delay(800).slideToggle("slow");
+});
+
 </script>
 
 <!-- Switch row for mobile -->
@@ -221,6 +210,8 @@ $("#menu-button").click(function(){
     var viewportWidth = $(window).width();
     if (viewportWidth < 670) {
         $(".view").removeClass("row").addClass("clearfix");
+    if (viewportWidth > 670) {
+            $(".view").removeClass("clearfix").addClass("row");
     }
 });
 </script>
