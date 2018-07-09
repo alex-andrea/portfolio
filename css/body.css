@@ -460,6 +460,7 @@ and (orientation : portrait){
 .header {
     height: 66px;
     position: fixed;
+    left: 0;
 }
 
 .search {
@@ -513,6 +514,7 @@ and (orientation : portrait){
 
 .content {
     padding: 7% 4%;
+}
 
 .row {
   margin: 0 !important;
