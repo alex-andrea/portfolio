@@ -59,6 +59,14 @@
   margin-right: 30;
 }
 
+#menu {
+  display: none;
+}
+
+#menu-button {
+  display: none;
+}
+
 a {
   color: black;
   font-family: Kiona;
@@ -289,15 +297,12 @@ a.circle:hover {
 }
 
 .search {
-      padding-top: 20;
-      padding-right: 10;
-      position: fixed;
-      right: 15px;
-      z-index: 200;
-}
-
-a.search{
-  color: #000000;
+    padding-top: 22px;
+    padding-right: 10;
+    position: fixed;
+    right: 15px;
+    width: 25px;
+    z-index: 1000;
 }
 
 #footer1 {
@@ -353,6 +358,10 @@ a.search{
   top: 80px;
   left: 0;
   z-index: -1;
+}
+
+.bg2 {
+  display: none;
 }
 
 /* Slide Up, Fade In */
@@ -441,10 +450,65 @@ a.search{
 
 
 /* Media */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-/* STYLES GO HERE */
 
+@media only screen
+and (min-width : 325px)
+and (max-width: 667px)
+and (orientation : portrait){
+
+
+.header {
+    height: 66px;
+    position: fixed;
+    left: 0;
+}
+
+.search {
+  padding-top: 26px;
+  position: fixed;
+  width: 23px;
+  right: 10px;
+}
+
+.navlink {
+  display: none;
+}
+
+.bg {
+  display: none;
+}
+
+.bg2 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-position: center 60px;
+    background-image: url("../Images/ricardoresendesm.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.current {
+    display: none;
+}
+
+#menu-button{
+    z-index: 1002 !important;
+}
+
+#menu-button.active{
+    z-index: 1002 !important;
+}
+
+#menu{
+    z-index: 1001 !important;
+}
+
+.circle {
+  rightt: 10%;
+  bottom: 50px;
+  top: auto;
+}
 
 }

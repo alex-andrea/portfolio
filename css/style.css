@@ -408,9 +408,7 @@ a.circle:hover {
   width: 100%;
 }
 
-.site-nav {
-  display: none;
-}
+
 
 
 #menu {
@@ -455,15 +453,6 @@ and (orientation : portrait){
   z-index: 3;
   margin: 0 !important;
 }
-
-/* .site-nav {
-  display: inline;
-  padding-top: 24px;
-  padding-right: 10;
-  position: absolute;
-  left: 22px;
-  width: 36px;
-} */
 
 
 .scroll {
