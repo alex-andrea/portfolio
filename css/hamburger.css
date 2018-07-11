@@ -51,7 +51,7 @@ transform: translate(0px, -5px) rotate(-45deg);
   height: 100vh;
   padding-top: 30%;
   color: #fff;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   display: none;
   position: absolute;
   z-index: 1;
@@ -61,12 +61,14 @@ transform: translate(0px, -5px) rotate(-45deg);
   list-style: none;
   padding-left: 0 !important;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #menu ul li > ul.sub-menu {
   display: none;
   background: darkgray;
+  padding: 1px;
+  margin-top: 8px;
 }
 
 #menu ul li:hover > ul.sub-menu,
@@ -76,7 +78,7 @@ transform: translate(0px, -5px) rotate(-45deg);
 
 
 #menu ul li{
-  margin: 8px 0;
+  margin: 20px 0;
 }
 
 /* ul {
