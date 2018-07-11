@@ -59,7 +59,7 @@
           <ul class="sub-menu">
             <li class="menu-item"><a class='contact' href='mailto:alandrea@uw.edu'>alandrea@uw.edu</a></li>
           </ul>
-        </li>  
+        </li>
         <li><a href="#!">Blog</a></li>
         <li><a href="uxui.html">UX/UI</a></li>
         <li>  <a href="https://www.linkedin.com/in/alex-andrea-071379157/"><i class="fab fa-linkedin-in"></i></a>
@@ -195,9 +195,9 @@
 
 <!-- JavaScript -->
 
-<!-- Hamburger Menu -->
 <script type="text/javascript">
 
+//Hamburger menu
 $("#menu-button").click(function(){
   $(this).toggleClass("active");
   $("#line-1").toggleClass("active");
@@ -210,11 +210,7 @@ $("nav li .about").click(function () {
     $("#menu").delay(800).slideToggle("slow");
 });
 
-</script>
-
-<!-- Switch row for mobile -->
-<script type="text/javascript">
-
+//Switch row for mobile
   $(window).on('load, resize', function mobileViewUpdate() {
     var viewportWidth = $(window).width();
     if (viewportWidth < 670) {
@@ -222,103 +218,90 @@ $("nav li .about").click(function () {
       }
 });
 
+
+
+  //Link hover effect
+  $(".a1").hover(function(){
+    $(this).addClass("a2");
+    $(".a1").toggleClass('hover');
+    $(".a1").mouseout(function(){
+      $(this).removeClass("a2");
+    });
+  });
+
+  $(".a3").hover(function(){
+    $(this).addClass("a4");
+    $(".a3").toggleClass('hover');
+    $(".a3").mouseout(function(){
+      $(this).removeClass("a4");
+    });
+  });
+
+//  Popover
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover();
+$('body').on('click', function (e) {
+  $('[data-toggle="popover"]').each(function () {
+      if (!$(this).is(e.target) &&
+           $(this).has(e.target).length === 0 &&
+           $('.popover').has(e.target).length === 0) {
+          $(this).popover('hide');
+      }
+  });
+});
+});
+// $('body').on("click", function (evt){
+//   console.log(evt.target);
+// });
+
+// Scroll to anchor
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      console.log(hash);
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+var getInitialHash = location.hash;
+console.log(getInitialHash + " this is my test out put")
+// Hi Alex, i really did not change to much. The problem was our if statement was not validating to true. i just set the location hash outside of our if statement and removed the document.ready function (it was not necessary). I also removed all the script tags seperating your javascript code (it is also unnecessary and makes finding functions easier).
+//This now works. Try it out!
+  if ( getInitialHash == "#about" ) {
+    console.log(location.hash);
+    var hash2 = location.hash;
+    console.log(hash2);
+    $('html, body').animate({
+    scrollTop: $(hash2).offset().top
+  }, 2000, function(){
+      window.location.hash = hash2;
+      console.log("IT WURKED");
+    });
+  };
+
+
+  // Animate on scroll
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 10) {
+    $('.delay').addClass("slide-up-fade-in"); }
+
+    else {
+    $('.delay').removeClass("slide-up-fade-in");
+    // $('.delay').hide();
+    }
+  });
 </script>
-
-
-      <!-- Link hover effect -->
-      <script type="text/javascript">
-
-      $(".a1").hover(function(){
-        $(this).addClass("a2");
-        $(".a1").toggleClass('hover');
-      $(".a1").mouseout(function(){
-          $(this).removeClass("a2");
-        });
-      });
-
-      $(".a3").hover(function(){
-        $(this).addClass("a4");
-        $(".a3").toggleClass('hover');
-      $(".a3").mouseout(function(){
-          $(this).removeClass("a4");
-        });
-      });
-
-      </script>
-
-      <!-- Popover -->
-      <script type='text/javascript'>
-
-      $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();
-      $('body').on('click', function (e) {
-          $('[data-toggle="popover"]').each(function () {
-              if (!$(this).is(e.target) &&
-                   $(this).has(e.target).length === 0 &&
-                   $('.popover').has(e.target).length === 0) {
-                  $(this).popover('hide');
-              }
-          });
-      });
-      });
-      // $('body').on("click", function (evt){
-      //   console.log(evt.target);
-      // });
-      </script>
-
-      <!-- Scroll to anchor -->
-      <script type='text/javascript'>
-
-      $(document).ready(function(){
-      $("a").on('click', function(event) {
-
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-            console.log(hash);
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-
-      </script>
-
-      <!-- Animate on scroll -->
-      <script type='text/javascript'>
-
-      $(window).scroll(function(){
-        if($(window).scrollTop() > 10) {
-        $('.delay').addClass("slide-up-fade-in"); }
-
-      else {
-      $('.delay').removeClass("slide-up-fade-in");
-      // $('.delay').hide();
-  }
-});
-
-
-
-$(document).ready(function() {
- if (location.hash == '#about2') {
-   console.log(location.hash);
-   var hash2 = location.hash;
-   console.log(hash2);
-   $('html, body').animate({
-     scrollTop: $(hash2).offset().top
-   }, 800, function(){
-     console.log("IT WURKED");
- });
-};
-});
-  </script>
-
 
 </body>
 

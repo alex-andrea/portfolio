@@ -72,7 +72,7 @@ window.addEventListener("scroll", function(){
         <div class="col-sm-12"  align="center"><h1 id="title"><a href='index.html'>ALEX ANDREA</a></h1>
       <div class="row">
         <div class="col-sm-12">
-        <a href="index.html#about2" class="navlink a1">About Me</a>
+        <a href="index.html#about" class="navlink a1">About Me</a>
         <a href="#" id="contact" data-toggle="popover" data-placement="bottom" data-content="<a class='contact' href='mailto:alandrea@uw.edu'>alandrea@uw.edu</a>" class="navlink a1" data-html="true">Contact</a>
         <a href="blog" class="navlink a1">Blog</a>
         <font class="current" style="margin-right: 0;">UX/UI</font>
@@ -231,25 +231,23 @@ $("#menu-button").click(function(){
         });
       });
 
-      </script>
 
-      <!-- Popover -->
-      <script type='text/javascript'>
+//Popover
 
-      $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();
-      $('body').on('click', function (e) {
-          $('[data-toggle="popover"]').each(function () {
-              if (!$(this).is(e.target) &&
-                   $(this).has(e.target).length === 0 &&
-                   $('.popover').has(e.target).length === 0) {
-                  $(this).popover('hide');
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+  $('body').on('click', function (e) {
+      $('[data-toggle="popover"]').each(function () {
+            if (!$(this).is(e.target) &&
+                $(this).has(e.target).length === 0 &&
+                $('.popover').has(e.target).length === 0) {
+                $(this).popover('hide');
               }
           });
       });
       });
 
-      // <!-- Carousel -->
+// Carousel
 
       $(document).ready(function(){
   $('.single-item').slick({
@@ -260,62 +258,18 @@ $("#menu-button").click(function(){
 });
 
 
-      </script>
+//Animate on scroll
 
-
-    <!-- Animate on scroll -->
-    <script type='text/javascript'>
-
-    $(window).scroll(function(){
-      if($(window).scrollTop() > 10) {
-      $('.delay').addClass("slide-up-fade-in");
+$(window).scroll(function(){
+    if($(window).scrollTop() > 10) {
+    $('.delay').addClass("slide-up-fade-in");
     }
 
-      else {
-      $('.delay').removeClass("slide-up-fade-in");}
-    });
+    else {
+    $('.delay').removeClass("slide-up-fade-in");}
+});
 
-    //<!-- Back To Top -->
-
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 600;
-    var navbarHeight = $('.circle').outerHeight();
-
-    $(window).scroll(function(event){
-      didScroll = true;
-    });
-
-    setInterval(function() {
-      if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-      }
-    }, 100);
-
-  function hasScrolled() {
-      var st = $(this).scrollTop();
-
-      // Make sure they scroll more than delta
-      if(Math.abs(lastScrollTop - st) <= delta)
-          return;
-
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      if (st > lastScrollTop && st > navbarHeight){
-          // Scroll Down
-          $('.button').removeClass('circlehide').addClass('circleshow');
-      } else {
-          // Scroll Up
-          if(st + $(window).height() < $(document).height()) {
-              $('.button').removeClass('circleshow').addClass('circlehide');
-          }
-      }
-
-      lastScrollTop = st;
-  }
 </script>
-
 
 </body>
 
