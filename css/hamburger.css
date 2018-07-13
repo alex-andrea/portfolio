@@ -66,7 +66,7 @@ transform: translate(0px, -5px) rotate(-45deg);
 
 #menu ul li > ul.sub-menu {
   display: none;
-  background: darkgray;
+  background: #242424;
   padding: 1px;
   margin-top: 8px;
 }

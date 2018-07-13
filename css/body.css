@@ -521,7 +521,7 @@ and (orientation : portrait){
 }
 
 .grow {
-  width: 95%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
