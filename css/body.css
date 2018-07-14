@@ -106,7 +106,7 @@ a:hover{
 }
 
 #title2 {
-  margin-top:140px;
+  margin-top:10%;
   line-height:0.3;
 }
 .popover {
@@ -192,7 +192,7 @@ h3 {
   color: #000000;
   font-size: 15;
   width: 100%;
-  margin: 5% 0 0 0;
+  margin: 3% 0 0 0;
   font-family: 'Open Sans';
   font-weight: 100;
 }
