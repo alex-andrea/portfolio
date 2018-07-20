@@ -516,7 +516,7 @@ and (orientation : portrait){
     display: block;
     height: 100vh;
     width: 100vw;
-    top: -100px;
+    top: -200px;
     position: fixed;
     background-position: center 60px;
     background-image: url("../Images/fernyhole.jpg");
@@ -552,7 +552,7 @@ and (orientation : portrait){
 }
 
 .vid {
-  padding: 20px 0px 35px 0px;
+  padding: 20px 0px 50px 0px;
   width: 100%;
   max-width:100%;
 }
