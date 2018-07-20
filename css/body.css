@@ -552,7 +552,9 @@ and (orientation : portrait){
 }
 
 .vid {
-  padding-top: 25px;
+  padding: 20px 0px 35px 0px;
+  width: 100%;
+  max-width:100%;
 }
 
 
@@ -564,6 +566,7 @@ and (orientation : portrait){
 #eletitle {
     margin-top: 110px;
     line-height: 0.5;
+    font-size: 40px;
 
 h3 {
   font-size: 20;
@@ -572,6 +575,10 @@ h3 {
 
 ul #goals {
   padding-left: 10px;
+}
+
+#footer1 {
+  margin: 0 0 0 0;
 }
 
 #title2 {
