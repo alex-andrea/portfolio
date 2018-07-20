@@ -9,6 +9,12 @@
 
 
 @font-face {
+  font-family: 'SantaFe';
+  src: url('../Fonts/santafe.ttf');
+  src: url('../Fonts/santafe.ttf')  format('truetype');
+}
+
+@font-face {
   font-family: 'Kiona';
   src: url('../Fonts/Kiona.ttf');
   src: url('../Fonts/Kiona.ttf')  format('truetype');
@@ -106,10 +112,22 @@ a:hover{
   position: relative;
 }
 
-#title2 {
-  margin-top:9%;
-  line-height:0.3;
+#eletitle {
+  margin-top:150px;
+  color: #FFF;
+  font-size: 60px;
+  line-height: 0.8;
+  font-family: SantaFe;
 }
+
+.projtype {
+  padding-bottom: 5;
+  /* line-height: 0.3; */
+  font-family: Kiona;
+  font-size:14;
+  color: #FFF;
+}
+
 .popover {
   top: 11px !important;
   border: none !important;
@@ -198,7 +216,6 @@ h3 {
 }
 
 .vid {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 700px;
 }
@@ -212,16 +229,15 @@ body {
   color: #000000;
 }
 
-.layer {
-    background-color: rgba(0, 0, 0, 0.2);
+/* .layer {
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-
+} */
 
 
 .left {
@@ -260,6 +276,7 @@ body {
     font-size: 30px;
     text-decoration: none;
 }
+
 #back2Top:hover {
     background-color: #DDF;
     color: #000;
@@ -371,7 +388,7 @@ a.circle:hover {
 .bg {
   width: 100%;
   position: fixed;
-  top: 80px;
+  top: -80px;
   left: 0;
   z-index: -1;
 }
