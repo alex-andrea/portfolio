@@ -115,14 +115,14 @@ a:hover{
 #eletitle {
   margin-top:150px;
   color: #FFF;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 0.8;
   font-family: SantaFe;
 }
 
 .projtype {
   padding-bottom: 5;
-  /* line-height: 0.3; */
+  line-height: 0.5;
   font-family: Kiona;
   font-size:14;
   color: #FFF;
