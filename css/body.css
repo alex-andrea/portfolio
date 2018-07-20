@@ -567,6 +567,7 @@ and (orientation : portrait){
     margin-top: 110px;
     line-height: 0.5;
     font-size: 40px;
+}
 
 h3 {
   font-size: 20;
@@ -578,7 +579,7 @@ ul #goals {
 }
 
 #footer1 {
-  margin: 0 0 0 0;
+  margin: 0px;
 }
 
 #title2 {
