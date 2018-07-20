@@ -218,6 +218,7 @@ h3 {
 .vid {
   width: 70%;
   max-width: 800px;
+  padding-top: 40px;
 }
 
 body {
@@ -550,11 +551,19 @@ and (orientation : portrait){
   margin: 0 !important;
 }
 
+.vid {
+  padding-top: 25px;
+}
+
+
 .grow {
   width: 100%;
   margin-bottom: 30px;
 }
 
+#eletitle {
+    margin-top: 110px;
+    line-height: 0.5;
 
 h3 {
   font-size: 20;
