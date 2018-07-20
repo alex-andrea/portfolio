@@ -40,6 +40,7 @@
 
 .wrapper {
   position: absolute;
+  width: 100%;
   -webkit-animation: fadeIn 1s; /* Safari 4+ */
   -moz-animation: fadeIn 1s; /* Fx 5+ */
   -o-animation: fadeIn 1s; /* Opera 12+ */
@@ -76,12 +77,12 @@ a {
   text-decoration: none;
 }
 
-.current {
+/* .current {
   color: black;
   font-family: Kiona;
   letter-spacing: 2px;
   font-size: 13;
-}
+} */
 
 /* .striped {
 background-color: #FFF;
@@ -198,6 +199,8 @@ h3 {
 
 .vid {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
 }
 
 body {
@@ -221,13 +224,6 @@ body {
 
 
 
-.main {
-  position: relative;
-  /* overflow: scroll; */
-  height: 100vh;
-  width: 100vw;
-}
-
 .left {
   padding-top: 3px;
 }
@@ -237,20 +233,36 @@ body {
   padding-top: 14px;
 }
 
-.circleshow {
-  bottom: 9%;
-  left: 93%;
-}
-
-.circlehide {
-  bottom: -100%;
-  left: -100;
-}
-
 .line {
   border-top: 1px solid black;
   width: 100%;
   z-index:2;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
 }
 
 .header {

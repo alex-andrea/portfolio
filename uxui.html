@@ -83,9 +83,10 @@
 
     <!-- Body -->
 
-    <div class="button"><a class="circle" href="#top"><div class="incircle">BACK TO TOP</div></div></a>
 
-    <div class="container-fluid" style="padding:0;">
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+    <div class="container-flex">
     <div class="row">
       <div class="col fade-in" id="title2">
         <h2>Happy Elephant</h2>
@@ -100,7 +101,7 @@
 
     <div class="row">
       <div class="col fade-in" style="padding-top:40px;">
-        <video class="vid" autoplay muted width="700px">
+        <video class="vid" autoplay muted>
     <source src="Images/elephant.mp4" type="video/mp4">
       <source src="Images/elephant.ogg" type="video/ogg">
   </video>
@@ -198,17 +199,6 @@ $("#menu-button").click(function(){
 
 </script>
 
-<!-- Switch row for mobile -->
-<!-- <script type="text/javascript">
-
-  $(window).on('load, resize', function mobileViewUpdate() {
-    var viewportWidth = $(window).width();
-    if (viewportWidth < 670) {
-        $(".row").addClass("clearfix").removeClass("row");
-      }
-});
-
-</script> -->
 
       <!-- Java -->
       <script type="text/javascript">
@@ -268,6 +258,26 @@ $(window).scroll(function(){
     else {
     $('.delay').removeClass("slide-up-fade-in");}
 });
+
+
+//Scroll to top when arrow up clicked BEGIN
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ //Scroll to top when arrow up clicked END*/
 
 </script>
 
