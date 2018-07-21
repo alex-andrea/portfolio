@@ -40,6 +40,13 @@
   src: url('../Fonts/BanglaMN.ttf')  format('truetype');
 }
 
+@font-face {
+  font-family: 'Abadi';
+  src: url('../Fonts/AbadiMTCondensedExtraBold.ttf');
+  src: url('../Fonts/AbadiMTCondensedExtraBold.ttf')  format('truetype');
+}
+
+
 .wrapper {
   -webkit-animation: fadeIn 1s; /* Safari 4+ */
   -moz-animation: fadeIn 1s; /* Fx 5+ */
@@ -190,6 +197,19 @@ a.contact:hover{
   font-family: 'Open Sans', sans-serif;
 }
 
+a#work{
+  font-family: 'Abadi';
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 0.5;
+  color: #E16969;
+  font-size: 20px;
+}
+
+a#work:hover{
+  color: #bf4a4a;
+}
+
 a.contact{
   color: #FFFFFF;
   font-style: italic;
@@ -197,6 +217,7 @@ a.contact{
   font-size: 12;
   font-family: 'Open Sans', sans-serif;
 }
+
 
 
 h1{
@@ -340,9 +361,14 @@ a.circle {
 }
 
 a.circle:hover {
-  box-shadow: 0px 0px 1px rgba(132, 0, 0, 1);
+  /* box-shadow: 0px 0px 1px rgba(132, 0, 0, 1); */
   color: #571111;
-}
+  -webkit-transform:scale(1.06);
+  -moz-transform:scale(1.06);
+   -ms-transform:scale(1.06);
+  -o-transform:scale(1.06);
+  transform:scale(1.06);
+  }
 
 .incircle {
   display: table-cell;
