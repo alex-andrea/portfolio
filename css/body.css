@@ -380,7 +380,7 @@ a.circle:hover {
 }
 
 .carousel-inner {
-   margin:50px auto;
+   margin: 30px auto;
    width: 80%;
    max-width: 800px;
 }
