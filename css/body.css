@@ -47,13 +47,28 @@
 .wrapper {
   position: absolute;
   width: 100%;
-  -webkit-animation: fadeIn 1s; /* Safari 4+ */
-  -moz-animation: fadeIn 1s; /* Fx 5+ */
-  -o-animation: fadeIn 1s; /* Opera 12+ */
-  animation: fadeIn 1s;
+  /* -webkit-animation: fadeIn 1s; /* Safari 4+ */
+  /* -moz-animation: fadeIn 1s; /* Fx 5+ */
+  /* -o-animation: fadeIn 1s; /* Opera 12+ */
+  /* animation: fadeIn 1s; */
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
 }
 
+.wrapper2 {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-animation: fadeIn 0.5s; /* Safari 4+ */
+  -moz-animation: fadeIn 0.5s; /* Fx 5+ */
+  -o-animation: fadeIn 0.5s; /* Opera 12+ */
+  animation: fadeIn 0.5s;
+  perspective: 1px;
+}
 
 .fade-in {
   -webkit-animation: fadeIn 1s; /* Safari 4+ */
@@ -83,17 +98,6 @@ a {
   text-decoration: none;
 }
 
-/* .current {
-  color: black;
-  font-family: Kiona;
-  letter-spacing: 2px;
-  font-size: 13;
-} */
-
-/* .striped {
-background-color: #FFF;
-background-image: linear-gradient(transparent 60%, rgba(255,105,155,.5) 40%);
-} */
 
 a:hover{
   color: #000000;
@@ -113,7 +117,7 @@ a:hover{
 }
 
 #eletitle {
-  margin-top:150px;
+  margin-top:140px;
   color: #FFF;
   font-size: 45px;
   line-height: 0.8;
@@ -212,11 +216,11 @@ h3 {
   font-size: 15;
   font-family: 'Open Sans';
   font-weight: 100;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 .vid {
-  width: 70%;
+  width: 80%;
   max-width: 800px;
   padding-top: 40px;
 }
@@ -337,6 +341,13 @@ a.circle:hover {
     z-index: 1000;
 }
 
+.section1 {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+
 #footer1 {
     position: relative;
     bottom: 0;
@@ -389,11 +400,24 @@ a.circle:hover {
 }
 
 .bg {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 700px;
   width: 100%;
-  position: fixed;
-  top: -80px;
-  left: 0;
+  transform: translateZ(-1px) scale(2);
   z-index: -1;
+  width: 100%;
+  background-image: url('../Images/fernyhole.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -100px;
+  -webkit-animation: fadeIn 1.7s; /* Safari 4+ */
+  -moz-animation: fadeIn 1.7s; /* Fx 5+ */
+  -o-animation: fadeIn 1.7s; /* Opera 12+ */
+  animation: fadeIn 1.7s;
+  perspective: 1px;
+
 }
 
 .bg2 {

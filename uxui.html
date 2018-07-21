@@ -27,10 +27,17 @@
 
   <body>
     <!-- Header -->
-    <div class="wrapper">
-      <img src="Images/fernyhole.jpg" class="bg">
-      <div class="bg2"></div>
 
+
+    <a id="back2Top" title="Back to top" href="#">
+      <i class="fas fa-angle-up"></i></a>
+
+
+    <div class="wrapper">
+  <div class="bg"></div>
+      <!-- <div class="bg2"></div> -->
+
+      <div class="wrapper2">
     <a id="top"></a>
 
     <!-- Hamburger -->
@@ -54,7 +61,7 @@
       </ul>
     </div>
 </nav>
-    <div class="container-flex section1">
+    <div class="container-flex">
 
 
 
@@ -84,10 +91,9 @@
     <!-- Body -->
 
 
-    <a id="back2Top" title="Back to top" href="#">
-      <i class="fas fa-angle-up"></i></a>
 
-    <div class="container-flex">
+
+    <div class="container-flex section1">
     <div class="row no-gutters">
       <div class="col fade-in" id="eletitle">
         Happy Elephant
@@ -260,8 +266,9 @@ $(window).scroll(function(){
 
 
 //Scroll to top when arrow up clicked BEGIN
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
+$('.wrapper').scroll(function(e) {
+    var height = $('.wrapper').scrollTop();
+    console.log(height);
     if (height > 100) {
         $('#back2Top').fadeIn();
     } else {
@@ -271,7 +278,7 @@ $(window).scroll(function() {
 $(document).ready(function() {
     $("#back2Top").click(function(event) {
         event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $(".wrapper").animate({ scrollTop: 0 }, "slow");
         return false;
     });
 
