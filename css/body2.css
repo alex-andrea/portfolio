@@ -208,15 +208,57 @@ h3 {
 
 }
 
+.box {
+  height: 200px;
+  width: 500px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 100;
+  display: block;
+  line-height: 1.2;
+}
+
+.ribbon {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 55px;
+  border: 20px solid #000;
+  border-top: 0 solid;
+  margin: 10px;
+  border-bottom: 20px solid rgba(0,0,0,0);
+  font: 'Open Sans', Helvetica, sans-serif;
+  color: #FFF;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+}
+
+.ribboncontainer{
+  width: 60px;
+}
+
+.inribbon {
+  position: relative;
+  left: -10px;
+  top: 4px;
+  text-align: center;
+  width: 23px;
+  line-height: 1.5;
+}
+
 .content{
   background-color: white;
-  padding: 7% 11% 7% 11%;
-  text-align: justify;
+  padding: 10% 11% 7% 11%;
+  text-align: center;
   color: #000000;
   font-size: 15;
   font-family: 'Open Sans';
   font-weight: 100;
-  margin-top: 110px;
+  margin-top: 40%;
 }
 
 .vid {
@@ -429,14 +471,14 @@ a.circle:hover {
   display: flex;
   flex: 1 0 auto;
   position: relative;
-  height: 150vh;
+  height: 100vh;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100%;
-  background-image: url('../Images/fernyhole.jpg');
+  background-image: url('../Images/Mockup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -100px;
+  background-position: center;
   -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
   -moz-animation: fadeIn 1.8s; /* Fx 5+ */
   -o-animation: fadeIn 1.8s; /* Opera 12+ */
@@ -445,9 +487,6 @@ a.circle:hover {
 
 }
 
-.bg2 {
-  display: none;
-}
 
 /* Slide Up, Fade In */
 .slide-up-fade-in{
