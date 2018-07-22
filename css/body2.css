@@ -213,12 +213,14 @@ h3 {
   width: 500px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 37%;
+  top: 36%;
   left: 50%;
   margin-left: -250px;
+  /* border: black solid 3px; */
   z-index: 100;
   display: block;
   line-height: 1.2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .ribbon {
@@ -252,13 +254,14 @@ h3 {
 
 .content{
   background-color: white;
-  padding: 10% 11% 7% 11%;
+  padding: 15% 11% 7% 11%;
   text-align: center;
   color: #000000;
   font-size: 15;
   font-family: 'Open Sans';
   font-weight: 100;
   margin-top: 40%;
+  box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .vid {
@@ -475,10 +478,10 @@ a.circle:hover {
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100%;
-  background-image: url('../Images/Mockup.jpg');
+  background-image: url('../Images/IMG_7239.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
   -moz-animation: fadeIn 1.8s; /* Fx 5+ */
   -o-animation: fadeIn 1.8s; /* Opera 12+ */
