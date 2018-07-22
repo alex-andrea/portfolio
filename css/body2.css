@@ -9,10 +9,17 @@
 
 
 @font-face {
-  font-family: 'SantaFe';
-  src: url('../Fonts/santafe.ttf');
-  src: url('../Fonts/santafe.ttf')  format('truetype');
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat-ExtraBold.ttf');
+  src: url('../Fonts/Montserrat-ExtraBold.ttf')  format('truetype');
 }
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../Fonts/PlayfairDisplay-Regular.ttf');
+  src: url('../Fonts/PlayfairDisplay-Regular.ttf')  format('truetype');
+}
+
 
 @font-face {
   font-family: 'Kiona';
@@ -186,7 +193,7 @@ h1 a {
 }
 
 h2 {
-  font-family: 'Kiona', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25;
   font-weight: 300;
   text-align: center;
@@ -195,13 +202,10 @@ h2 {
 }
 
 h3 {
-  font-family: 'Kiona', sans-serif;
-  font-size: 26;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-align: left;
+  font-family: 'Playfair', serif;
+  font-size: 16;
+  text-align: center;
   padding: 0;
-  font-style: italic;
 }
 
 .delay{
@@ -241,6 +245,7 @@ h3 {
 
 .ribboncontainer{
   width: 60px;
+  float:left;
 }
 
 .inribbon {
@@ -250,6 +255,13 @@ h3 {
   text-align: center;
   width: 23px;
   line-height: 1.5;
+}
+
+.bloginfo{
+  position: absolute;
+  width: 100%;
+  padding-top: 10%;
+  line-height: 1px;
 }
 
 .content{
