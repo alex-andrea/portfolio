@@ -165,10 +165,8 @@ a.contact:hover{
 
 a.contact{
   color: #000000;
-  font-style: italic;
   font-weight: 300;
   font-size: 13;
-  line-height: 3;
   font-family: 'Open Sans', sans-serif;
 }
 
