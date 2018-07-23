@@ -15,9 +15,9 @@
 }
 
 @font-face {
-  font-family: 'Kiona';
-  src: url('../Fonts/Kiona.ttf');
-  src: url('../Fonts/Kiona.ttf')  format('truetype');
+  font-family: 'RussoOne';
+  src: url('../Fonts/RussoOne.ttf');
+  src: url('../Fonts/RussoOne.ttf')  format('truetype');
 }
 
 @font-face {
@@ -151,23 +151,6 @@ a:hover{
   top: 1px !important;
 }
 
-a.contact:hover{
-  color: lightgray;
-  font-weight: 300;
-  font-size: 13;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.envelope {
-  padding-top: 3px;
-}
-
-a.contact{
-  color: #000000;
-  font-weight: 300;
-  font-size: 13;
-  font-family: 'Open Sans', sans-serif;
-}
 
 #hamburger {
   float: right;
@@ -202,14 +185,15 @@ h2 {
   margin: 0 auto;
 }
 
-h3 {
-  font-family: 'Kiona', sans-serif;
-  font-size: 26;
-  font-weight: 400;
-  letter-spacing: 2px;
+h3 a {
+  font-family: 'RussoOne', sans-serif;
+  font-size: 100;
   text-align: center;
-  padding: 0;
-  font-style: italic;
+}
+
+h3 {
+  padding: 10%;
+  margin-top:7%;
 }
 
 .delay{
@@ -375,6 +359,14 @@ a.circle:hover {
   /* padding-top:100px; */
 }
 
+.section2 {
+  background-color: white;
+  padding-top: 100px;
+  max-height: 105vh;
+  overflow: hidden;
+  padding-left: 4%;
+  padding-right: 4%;
+}
 
 #footer1 {
     position: relative;

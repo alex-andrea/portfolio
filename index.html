@@ -128,17 +128,23 @@
 
         <!-- <img src="Images/me.jpg" width="80%" style="margin: 0 auto; opacity: .93;"> -->
 
-      <div class="col-6 delay bio">
+      <div class="col-6 bio">
         <h2>&#9472; ALEX M. ANDREA &#9472;
         <br>ORANGE COUNTY, CA</br></h2>
-      <div class="col quotes delay" style="font-style:italic;  margin-bottom:5%; margin-top:5%;">
+      <div class="col quotes" style="font-style:italic;  margin-bottom:5%; margin-top:5%;">
         </div>
-      <div class="col delay bio" style="margin-bottom:4%; text-align: justify;">
+      <div class="col bio" style="margin-bottom:4%; text-align: justify;">
         I am a digital UX and UI designer located in Orange County. In a world of superfluity, I believe we should surround ourselves only with what is meaningful, deliberate, and delightful — including the products and technology we use. That is why I pursue beauty in both form <i>and</i> function, prioritizing simplicity and efficiency in my designs.</div>
-      <div class="col delay bio" style="margin-bottom:4%; text-align:justify;">
+      <div class="col bio" style="margin-bottom:4%; text-align:justify;">
         I was born and raised in Seattle where it rains exactly as much as they say. Please hire me so I don't have to go back ;)</div>
-      <p style="padding-left: 30%; text-align:justify;"><i class="far fa-envelope envelope"></i> <a href='mailto:alandrea@uw.edu' class="contact">&#8193; ALANDREA@UW.EDU</a>
-      <br style="padding-left: 30%; text-align:justify;">  <i class="far fa-address-card envelope"></i><a href="" class='contact'>&emsp;  R&Eacute;SUM&Eacute;</a></br>
+      <p style="text-align:center;">
+        <a href="mailto:alandrea@uw.edu" class="a3"><i class="far fa-envelope"></i></a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/alex-andrea-071379157/" class="a3"><i class="fab fa-linkedin-in"></i></a>
+          &nbsp;
+        <a href="http://www.instagram.com/alexastris" class="a3"><i class="fab fa-instagram"></i></a>
+          &nbsp;
+        <a href="https://dribbble.com/alex-andrea" class="a3"><i class="fab fa-dribbble"></i></a></br>
     </p>
 
       </div>
@@ -149,9 +155,29 @@
 </div>
 </div>
 
+<div class="container-flex section2">
+<div class="row no-gutters">
+  <div class="col-4 delay">
+    <img src="https://scontent-sjc3-1.cdninstagram.com/vp/d5bf44a04ffe1efff0a104d2a7ba4d6b/5BF11D67/t51.2885-15/e35/21980259_367043937065334_7330918672103374848_n.jpg" width="80%">
+    <h3><a href="blog">BLOG</a></h3>
+  </div>
+
+  <div class="col-4 delay">
+    <img src="https://scontent-sjc3-1.cdninstagram.com/vp/b0907c790e03fe5ba2b9834d321a5a4c/5C11F00A/t51.2885-15/e35/13398812_247619345609021_837586488_n.jpg" width="80%">
+    <img src="https://scontent-sjc3-1.cdninstagram.com/vp/a16dd526c079c3e1154012aeed314033/5BCFC70B/t51.2885-15/e35/12917966_815453295253360_1574068680_n.jpg" width="80%" style="padding-top:20%;">
+  </div>
+  <div class="col-4 delay">
+    <img src="https://scontent-sjc3-1.cdninstagram.com/vp/7d65c859e781e3aaf237fc77c24c9dce/5BCE6D29/t51.2885-15/e35/13385877_1404070406275086_1593712751_n.jpg" width="80%">
+    <img src="https://scontent-sjc3-1.cdninstagram.com/vp/16e8d170c84bf5502ba505bc1c25f92d/5BE427F7/t51.2885-15/e35/12917822_845899648872023_500055191_n.jpg" width="80%" style="padding-top:20%;">
+
+  </div>
+
+</div>
+</div>
+
 
 <!-- Copyright -->
-<div id="footer1">
+<!-- <div id="footer1">
   <div id="copyright" style="padding-top: 13; font-weight:lighter;">
     &copy;2018 <strong style="font-weight:600;">ALEX ANDREA</strong>
   </div>
@@ -162,7 +188,7 @@
       &nbsp;
     <a href="https://dribbble.com/alex-andrea" class="a3"><i class="fab fa-dribbble"></i></a>
   </div>
-  </div>
+  </div> -->
 
 
 
@@ -242,8 +268,8 @@
 
 //Animate on scroll
 
-$(window).scroll(function(){
-    if($(window).scrollTop() > 10) {
+$('.section1').scroll(function(){
+    if($('.section1').scrollTop() > 10) {
     $('.delay').addClass("slide-up-fade-in");
     }
 
