@@ -15,12 +15,6 @@
 }
 
 @font-face {
-  font-family: 'RussoOne';
-  src: url('../Fonts/RussoOne.ttf');
-  src: url('../Fonts/RussoOne.ttf')  format('truetype');
-}
-
-@font-face {
   font-family: 'BanglaMN';
   src: url('../Fonts/BanglaMN.ttf');
   src: url('../Fonts/BanglaMN.ttf')  format('truetype');
@@ -186,7 +180,7 @@ h2 {
 }
 
 h3 a {
-  font-family: 'RussoOne', sans-serif;
+  font-family: 'DIN', sans-serif;
   font-size: 100;
   text-align: center;
 }
@@ -194,6 +188,27 @@ h3 a {
 h3 {
   padding: 10%;
   margin-top:7%;
+}
+
+h4 {
+  padding-top: 10%;
+  margin-top:7%;
+  font-family: Arial Black;
+  font-size: 167px;
+}
+
+a.btn {
+  font-family: 'Open Sans';
+}
+
+a.btn-outline-danger:hover{
+  background-color:transparent;
+  color: #b73539;
+  border-color: #b73539;
+  border-top-color: #b73539;
+  border-right-color: #b73539;
+  border-bottom-color: #b73539;
+  border-left-color: #b73539;
 }
 
 .delay{
@@ -551,6 +566,9 @@ a.circle:hover {
         -ms-transform:  translate(0px,0px)  ;
     }
 }
+
+
+
 
 
 /*Glitch hover */
