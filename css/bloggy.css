@@ -304,6 +304,77 @@ figcaption a:hover {
 	background: #fff;
 }
 
+/*BLOG LINK Effect*/
+/* .link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8vw;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
+.link--kumya {
+	font-family: 'DIN', sans-serif;
+	font-size: 8vw;
+	overflow: hidden;
+	padding: 10px 10px 0;
+	line-height: 1;
+	color: #242424;
+}
+
+.link--kumya:hover {
+	color: #242424;
+}
+
+.link--kumya::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background: #242424;
+	-webkit-transform: translate3d(101%,0,0);
+	transform: translate3d(101%,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kumya:hover::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--kumya span {
+	display: block;
+	position: relative;
+}
+
+.link--kumya span::before {
+	content: attr(data-letters);
+	position: absolute;
+	color: #fff;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0%;
+  z-index:100;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kumya:hover span::before {
+	width: 100%;
+} */
+
+
 
 
 
@@ -431,7 +502,7 @@ a.circle:hover {
 .section2 {
   background-color: white;
   padding-top: 100px;
-  max-height: 180vh;
+  max-height: 105vh;
   overflow: hidden;
   padding-left: 4%;
   padding-right: 4%;
