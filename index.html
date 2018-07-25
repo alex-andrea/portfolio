@@ -107,7 +107,12 @@
     <!-- Body -->
 
 
-
+    <!-- <div class="container-flex section1">
+    <div class="row no-gutters">
+      <div class="col rotated">UX/UI</div>
+      <div class="col rotated">DESIGN</div>
+    </div>
+    </div> -->
 
     <div class="container-flex section1">
     <div class="row no-gutters">
@@ -119,25 +124,25 @@
 
     <div class="row arrowcontainer">
       <div class="col-12 arrowmove">
-        <a href="#about" style="font-size:30px;"><i class="fas fa-angle-down"></i></a>
+        <a id="downarrow" style="font-size:30px;"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <a name="about"></a>
+    <a id="about"></a>
     <div class="row content no-gutters">
       <div class="col-6 delay">
 
         <img src="Images/me.jpg" width="80%" style="margin: 0 auto; opacity: .93;">
       </div>
-      <div class="col-6 bio">
+      <div class="col-6 bio delay">
         <h2>&#9472; ALEX M. ANDREA &#9472;
         <br>ORANGE COUNTY, CA</br></h2>
-      <div class="col quotes" style="font-style:italic;  margin-bottom:5%; margin-top:5%;">
+      <div class="col quotes delay" style="font-style:italic;  margin-bottom:5%; margin-top:5%;">
         </div>
-      <div class="col bio" style="margin-bottom:4%; text-align: justify;">
+      <div class="col bio delay" style="margin-bottom:4%; text-align: justify;">
         I am a digital UX and UI designer located in Orange County. In a world of superfluity, I believe we should surround ourselves only with what is meaningful, deliberate, and delightful — including the products and technology we use. That is why I pursue beauty in both form <i>and</i> function, prioritizing simplicity and efficiency in my designs.</div>
-      <div class="col bio" style="margin-bottom:4%; text-align:justify;">
+      <div class="col bio delay" style="margin-bottom:4%; text-align:justify;">
         I was born and raised in Seattle where it rains exactly as much as they say. Please hire me so I don't have to go back ;)</div>
-      <p style="text-align:center;">
+      <p style="text-align:center;" class="delay">
         <a href="mailto:alandrea@uw.edu" class="a3"><i class="far fa-envelope"></i></a>
         &nbsp;
         <a href="https://www.linkedin.com/in/alex-andrea-071379157/" class="a3"><i class="fab fa-linkedin-in"></i></a>
@@ -155,6 +160,15 @@
 </div>
 </div>
 
+<div class="container-flex section2" style="padding-top:0;">
+<div class="row no-gutters">
+<div class="col-12">
+  <img src="Images/portfolio.png" width="50%">
+</div>
+</div>
+
+</div>
+</div>
 <div class="container-flex section2">
 <div class="row no-gutters">
   <div class="col-12" style="margin-bottom:5%;"><p style="text-align:left;"> #POSTITFORTHEAESTHETIC:</div>
@@ -235,24 +249,14 @@
       });
 
       // Scroll to anchor
-      $(document).ready(function(){
-        $("a").on('click', function(event) {
-
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-            console.log(hash);
-            $('html, body').animate({
+        $("#downarrow").on('click', function(event) {
+            var hash = $('#about');
+            console.log(about);
+            $('.wrapper').animate({
               scrollTop: $(hash).offset().top
             }, 800, function(){
-
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
             });
-          } // End if
         });
-      });
 
       var getInitialHash = location.hash;
       console.log(getInitialHash + " this is my test out put")
@@ -311,7 +315,7 @@
 
 $('.wrapper').scroll(function(){
     var height = $('.wrapper').scrollTop();
-    if(height > 100) {
+    if(height > 150) {
     $('.delay').addClass("slide-up-fade-in");
     }
 
