@@ -342,6 +342,14 @@ h4 {
   z-index:1;
 }
 
+h6{
+  font-family: 'DIN';
+  font-weight: bold;
+  font-size: 180;
+  margin-top:15%;
+  line-height: 0;
+}
+
 figcaption h5 {
     margin: 0 auto;
     margin-top: 75%;
