@@ -370,6 +370,27 @@ figcaption a:hover {
   z-index: 100;
 }
 
+.arrowcontainer {
+  background-color: white;
+  padding-top: 5%;
+  font-size: 30px;
+}
+
+.arrowmove
+  {
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+  }
+
 .circle {
   height: 60px;
   width: 60px;

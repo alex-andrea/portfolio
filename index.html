@@ -117,17 +117,17 @@
       <div class="col-3 projects"></div>
     </div>
 
-
+    <div class="row arrowcontainer">
+      <div class="col-12 arrowmove">
+        <a href="#about" style="font-size:30px;"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+    <a name="about"></a>
     <div class="row content no-gutters">
-      <div class="col-6 delay glitch glitch--style-5 delay">
-            <div class="glitch__img"></div>
-            <div class="glitch__img"></div>
-            <div class="glitch__img"></div>
-            <div class="glitch__img"></div>
-          </div>
+      <div class="col-6 delay">
 
-        <!-- <img src="Images/me.jpg" width="80%" style="margin: 0 auto; opacity: .93;"> -->
-
+        <img src="Images/me.jpg" width="80%" style="margin: 0 auto; opacity: .93;">
+      </div>
       <div class="col-6 bio">
         <h2>&#9472; ALEX M. ANDREA &#9472;
         <br>ORANGE COUNTY, CA</br></h2>
@@ -234,6 +234,41 @@
         $("#menu").slideToggle("slow");
       });
 
+      // Scroll to anchor
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+            console.log(hash);
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+
+      var getInitialHash = location.hash;
+      console.log(getInitialHash + " this is my test out put")
+      // Hi Alex, i really did not change to much. The problem was our if statement was not validating to true. i just set the location hash outside of our if statement and removed the document.ready function (it was not necessary). I also removed all the script tags seperating your javascript code (it is also unnecessary and makes finding functions easier).
+      //This now works. Try it out!
+        if ( getInitialHash == "#about" ) {
+          console.log(location.hash);
+          var hash2 = location.hash;
+          console.log(hash2);
+          $('html, body').animate({
+          scrollTop: $(hash2).offset().top
+        }, 2000, function(){
+            window.location.hash = hash2;
+            console.log("IT WURKED");
+          });
+        };
 
 //Link hover effect
 
