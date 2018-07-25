@@ -98,12 +98,7 @@
 }
 
 a {
-  color: black;
-  font-family: Kiona;
-  font-weight: 100;
-  letter-spacing: 2px;
-  font-size: 13;
-  text-decoration: none;
+  color:black;
 }
 
 
@@ -334,7 +329,33 @@ h4 {
   z-index:1;
 }
 
+.subheading {
+  margin-top: 50%;
+  padding-top: 14%;
+  font-family: 'DIN';
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index:1;
+}
+
 figcaption h5 {
+    margin: 0 auto;
+    margin-top: 75%;
+    padding: 2%;
+    font-family: 'DIN';
+    font-weight: normal;
+    font-size: 1.1vw;
+    color: #FFF;
+    width: 30%;
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+figcaption h5 a {
   margin-top: 50%;
   padding-top: 13%;
   font-family: 'DIN';
@@ -346,14 +367,16 @@ figcaption h5 {
   left: 0;
 }
 
-figcaption a {
-	/* color: #fff;
-	padding: 4px 10px;
-	text-decoration: none; */
-}
-
 figcaption a:hover {
-  color:#FFF;
+  margin-top: 50%;
+  padding-top: 13%;
+  font-family: 'DIN';
+  font-weight: normal;
+  font-size: 1.2vw;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 
 
@@ -399,7 +422,7 @@ figcaption a:hover {
 }
 
 #back2Top:hover {
-    background-color: #DDF;
+    background-color: #ece3f9;
     color: #000;
 }
 
