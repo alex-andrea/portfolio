@@ -10,8 +10,16 @@
 
 @font-face {
   font-family: 'DIN';
-  src: url('../Fonts/DINCondensed-Bold.ttf');
-  src: url('../Fonts/DINCondensed-Bold.ttf')  format('truetype');
+  src: url('../Fonts/DINPro-CondMedium.otf');
+  src: url('../Fonts/DINPro-CondMedium.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: 'DIN';
+    font-weight: bold;
+    src: url('../Fonts/DINCondensed-Bold.ttf');
+    src: url("../Fonts/DINCondensed-Bold.ttf")
+    format('truetype');
 }
 
 @font-face {
@@ -166,6 +174,7 @@ h1 a {
   text-align: center;
   font-style: normal;
   font-family: "DIN", sans-serif !important;
+  font-weight: bold !important;
   color: #000000 !important;
   letter-spacing: 0.3px !important;
   line-height: 1.2 !important;
@@ -173,6 +182,7 @@ h1 a {
 
 h2 {
   font-family: 'DIN', sans-serif;
+  font-weight: bold;
   font-size: 25;
   text-align: center;
   padding-top: 7%;
@@ -186,22 +196,13 @@ h2 {
   margin: 0 auto;
 }
 
-h3 a {
-  font-family: 'DIN', sans-serif;
-  font-size: 8vw;
-  text-align: center;
-}
 
-h3 {
-  padding: 10%;
-  margin-top:7%;
-}
 
 h4 {
-  padding-top: 10%;
-  margin-top:7%;
-  font-family: Arial Black;
-  font-size: 167px;
+  font-family: 'DIN';
+  font-weight: bold;
+  font-size: 1vw;
+  color: white;
 }
 
 a.btn {
@@ -238,7 +239,7 @@ a.btn-outline-danger:hover{
   font-family: 'Open Sans';
   font-weight: 100;
   /* margin-top: 110px; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .vid {
@@ -278,6 +279,7 @@ figure:hover figcaption {
 	top: 0;
 }
 
+
 figcaption {
 	background-color: transparent;
 	position: absolute;
@@ -292,43 +294,79 @@ figcaption {
 	transition: all .5s ease;
 }
 
-figcaption h4 {
-    font-family: 'DIN';
-    color: white;
-    margin-top: 10px;
-    position: relative;
-    align-content: center;
-    font-size: 4vw;
+h3 {
+  font-family: 'Knewave';
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*
-figure:hover h4,figure:hover p {
-	left: 0;
-} */
+h3 span {
+  background: #fff;
+  margin: 0 15px;
+}
+
+h3:before,
+h3:after {
+  background: black;
+  height: 2px;
+  flex: 1;
+  content: '';
+}
+h3.left:after {
+  background: none;
+}
+h3.right:before {
+  background: none;
+}
+
+h4 {
+  padding-top: -3.5vw;
+  margin-top: 50%;
+  font-family: 'DIN' !important;
+  font-weight: bold;
+  font-size: 3.5vw;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index:1;
+}
+
+figcaption h5 {
+  margin-top: 50%;
+  padding-top: 13%;
+  font-family: 'DIN';
+  font-weight: normal;
+  font-size: 1.2vw;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
 
 figcaption a {
-	color: #fff;
-	border: 2px solid #fff;
+	/* color: #fff;
 	padding: 4px 10px;
-	text-decoration: none;
+	text-decoration: none; */
 }
 
 figcaption a:hover {
-	color: #4f5856;
-	background: #fff;
+  color:#FFF;
 }
 
 
 
 
-.left {
+/* .left {
   padding-top: 3px;
 }
 
 .right {
   text-align: right;
   padding-top: 14px;
-}
+} */
 
 .line {
   border-top: 1px solid black;
@@ -454,7 +492,7 @@ a.circle:hover {
   font-size: 50;
 }
 
-.projects {
+.landing {
   background-color: transparent;
   min-width: 25vw;
   border-right: 1px solid white;
@@ -462,10 +500,15 @@ a.circle:hover {
   min-height: 70vh;
 }
 
-.projects:first-child {
+.landing:first-child {
   opacity: 0.8;
   border-left: 1px solid white;
 }
+
+.projects {
+  margin-top:5%;
+}
+
 
 .section1 {
   position: relative;
@@ -478,8 +521,8 @@ a.circle:hover {
   background-color: white;
   padding-top: 100px;
   /* max-height: 270vh; */
-  padding-left: 4%;
-  padding-right: 4%;
+  /* padding-left: 4%;
+  padding-right: 4%; */
 }
 
 #footer1 {
@@ -1299,11 +1342,6 @@ and (orientation : portrait){
     margin-top: 110px;
     line-height: 0.5;
     font-size: 40px;
-}
-
-h3 {
-  font-size: 20;
-  text-align: center;
 }
 
 ul #goals {
