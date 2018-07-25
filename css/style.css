@@ -432,7 +432,6 @@ a.circle:hover {
   background-color: white;
   padding-top: 100px;
   /* max-height: 270vh; */
-  overflow: hidden;
   padding-left: 4%;
   padding-right: 4%;
 }
