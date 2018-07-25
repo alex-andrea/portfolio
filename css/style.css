@@ -105,7 +105,7 @@ a:hover{
 
 #title {
   margin: 0 auto;
-  padding-top: 15;
+  padding-top: 19;
   padding-bottom: 3;
   position: relative;
   z-index:100;
@@ -431,7 +431,7 @@ a.circle:hover {
 .section2 {
   background-color: white;
   padding-top: 100px;
-  max-height: 180vh;
+  /* max-height: 270vh; */
   overflow: hidden;
   padding-left: 4%;
   padding-right: 4%;
