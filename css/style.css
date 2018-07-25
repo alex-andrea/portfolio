@@ -223,7 +223,7 @@ a.btn-outline-danger:hover{
 }
 
 #downarrow {
-
+  cursor: pointer;
 }
 
 #about{
