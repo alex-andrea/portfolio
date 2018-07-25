@@ -21,9 +21,9 @@
 }
 
 @font-face {
-  font-family: 'BanglaMN';
-  src: url('../Fonts/BanglaMN.ttf');
-  src: url('../Fonts/BanglaMN.ttf')  format('truetype');
+  font-family: 'DIN';
+  src: url('../Fonts/DINCondensed-Bold.ttf');
+  src: url('../Fonts/DINCondensed-Bold.ttf')  format('truetype');
 }
 
 
@@ -111,7 +111,7 @@ a:hover{
 
 #title {
   margin: 0 auto;
-  padding-top: 13;
+  padding-top: 19px;
   padding-bottom: 3;
   position: relative;
 }
@@ -175,11 +175,11 @@ a.contact{
 }
 
 h1 a {
-  font-size: 28px !important;
+  font-size: 42px !important;
   font-weight: 100 !important;
   text-align: center;
   font-style: normal;
-  font-family: "BanglaMN", sans-serif !important;
+  font-family: "DIN", sans-serif !important;
   color: #000000 !important;
   letter-spacing: 0.3px !important;
   line-height: 1.2 !important;
