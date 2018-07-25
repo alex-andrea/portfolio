@@ -354,6 +354,8 @@ figcaption a:hover {
 .bio {
   padding-left: 0px;
   padding-right: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 80%;
   margin: 0 auto;
 }
@@ -414,10 +416,12 @@ a.circle:hover {
   background-color: transparent;
   min-width: 25vw;
   border-right: 1px solid white;
+  opacity: 0.8;
   min-height: 70vh;
 }
 
 .projects:first-child {
+  opacity: 0.8;
   border-left: 1px solid white;
 }
 

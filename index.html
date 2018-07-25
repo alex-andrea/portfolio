@@ -119,7 +119,7 @@
 
 
     <div class="row content no-gutters">
-      <div class="col-6 delay glitch glitch--style-5">
+      <div class="col-6 delay glitch glitch--style-5 delay">
             <div class="glitch__img"></div>
             <div class="glitch__img"></div>
             <div class="glitch__img"></div>
@@ -274,8 +274,9 @@
 
 //Animate on scroll
 
-$('.section1').scroll(function(){
-    if($('.section1').scrollTop() > 10) {
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 100) {
     $('.delay').addClass("slide-up-fade-in");
     }
 
