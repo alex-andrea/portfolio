@@ -115,6 +115,12 @@ a:hover{
 .hover {
   color: lightgray; }
 
+.fadeIn{
+  -webkit-animation: fadeIn 1s; /* Safari 4+ */
+  -moz-animation: fadeIn 1s; /* Fx 5+ */
+  -o-animation: fadeIn 1s; /* Opera 12+*/
+  animation: fadeIn 1s;
+}
 
 #title {
   margin: 0 auto;
@@ -122,6 +128,10 @@ a:hover{
   padding-bottom: 3;
   position: relative;
   z-index:100;
+  -webkit-animation: fadeIn 1s; /* Safari 4+ */
+  -moz-animation: fadeIn 1s; /* Fx 5+ */
+  -o-animation: fadeIn 1s; /* Opera 12+*/
+  animation: fadeIn 1s;
 }
 
 #eletitle {
@@ -513,11 +523,52 @@ a.circle:hover {
     font-family: 'Playfair';
 }
 
+.navhover {
+  top: 47px;
+  position: absolute;
+  right: 33px;
+  z-index: 1000;
+  font-family: 'Playfair';
+}
+
+.navhover > a:hover {
+  color: #000;
+}
+
+.navhover > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navhover > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .rotated {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  text-align: left;
   font-family: 'Knewave';
-  font-size: 50;
+  font-size: 100px;
+  position: absolute;
+  top: 4%;
+  left: -130px;
+  letter-spacing: 30px;
+  line-height: 1;
+  opacity: 0.9;
+  z-index:2;
 }
 
 .col-xs-5ths,
