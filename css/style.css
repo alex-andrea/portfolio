@@ -61,14 +61,14 @@
 }
 
 .box {
-  background-color:#FF6D3C;
+  background-color:#F2F2F2;
   z-index: 1;
   width: inherit;
   min-height: 70vh;
   position: absolute;
   animation:
     panright 1s 1 ease-out,
-    slideright 1.5s 1.5s 1 ease-out;
+    slideright 1s 1s 1 ease-in;
     animation-fill-mode: forwards;
 }
 
@@ -301,7 +301,7 @@ body {
 figure {
 	margin: 0 auto;
 	padding: 0;
-  width: 80%;
+  width: 100%;
 	position: relative;
 	display: block;
 	cursor: pointer;
