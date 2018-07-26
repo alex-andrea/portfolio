@@ -12,6 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 @font-face {
   font-family: 'DIN';
   src: url('../Fonts/DINPro-CondMedium.otf');
@@ -36,6 +37,39 @@
   font-family: 'Knewave';
   src: url('../Fonts/knewave.ttf');
   src: url('../Fonts/knewave.ttf')  format('truetype');
+}
+
+
+@keyframes hideshow {
+  from {opacity: 0}
+  to {opacity:1}
+}
+
+.hideshow {
+  animation: hideshow 1s 1 step-end;
+}
+
+@keyframes panright {
+    0% {width: 0vw;}
+    25% {width: 0vw;}
+    100% {width: 100vw;}
+}
+
+@keyframes slideright {
+    0% {left: 0px;}
+    100% {left: 2000px;}
+}
+
+.box {
+  background-color:#E2DCDC;
+  z-index: 1;
+  width: inherit;
+  min-height: 70vh;
+  position: absolute;
+  animation:
+    panright 1s 1 ease-out,
+    slideright 1.5s 1.5s 1 ease-out;
+    animation-fill-mode: forwards;
 }
 
 
@@ -75,18 +109,15 @@
   top: 0;
   position: absolute;
   width: 100%;
-  -webkit-animation: fadeIn 0.5s; /* Safari 4+ */
-  -moz-animation: fadeIn 0.5s; /* Fx 5+ */
-  -o-animation: fadeIn 0.5s; /* Opera 12+ */
-  animation: fadeIn 0.5s;
+
   perspective: 1px;
 }
 
 .fade-in {
-  -webkit-animation: fadeIn 1s; /* Safari 4+ */
-  -moz-animation: fadeIn 1s; /* Fx 5+ */
-  -o-animation: fadeIn 1s; /* Opera 12+ */
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation: fadeIn 2s; /* Fx 5+ */
+  -o-animation: fadeIn 2s; /* Opera 12+ */
+  animation: fadeIn 2s;
 }
 
 .navlink {
@@ -116,10 +147,10 @@ a:hover{
   color: lightgray; }
 
 .fadeIn{
-  -webkit-animation: fadeIn 1s; /* Safari 4+ */
-  -moz-animation: fadeIn 1s; /* Fx 5+ */
-  -o-animation: fadeIn 1s; /* Opera 12+*/
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation: fadeIn 2s; /* Fx 5+ */
+  -o-animation: fadeIn 2s; /* Opera 12+*/
+  animation: fadeIn 2s;
 }
 
 #title {
@@ -128,10 +159,6 @@ a:hover{
   padding-bottom: 3;
   position: relative;
   z-index:100;
-  -webkit-animation: fadeIn 1s; /* Safari 4+ */
-  -moz-animation: fadeIn 1s; /* Fx 5+ */
-  -o-animation: fadeIn 1s; /* Opera 12+*/
-  animation: fadeIn 1s;
 }
 
 #eletitle {
@@ -515,6 +542,10 @@ a.circle:hover {
   vertical-align: middle;
 }
 
+.preload {
+  background-image: url('../Images/Mockup.jpg')
+}
+
 .nav {
     top: 47px;
     position: absolute;
@@ -589,6 +620,7 @@ a.circle:hover {
   border-right: 1px solid #DDE0E9;
   min-height: 70vh;
   opacity: 0.5;
+  animation: hideshow 1s 1 step-end;
 }
 
 .landing:first-child {
@@ -631,11 +663,7 @@ a.circle:hover {
 /*ZOOM*/
 .zoom{
 	overflow: hidden;
-	padding-bottom: 55%;
-  -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
-  -moz-animation: fadeIn 1.8s; /* Fx 5+ */
-  -o-animation: fadeIn 1.8s; /* Opera 12+ */
-  animation: fadeIn 1.8s;
+	padding-bottom: 55%
   perspective: 1px;
 }
 
@@ -643,10 +671,6 @@ a.circle:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -100px;
-  -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
-  -moz-animation: fadeIn 1.8s; /* Fx 5+ */
-  -o-animation: fadeIn 1.8s; /* Opera 12+ */
-  animation: fadeIn 1.8s;
   perspective: 1px;
 	position: fixed;
 	top: -100px;
@@ -654,8 +678,6 @@ a.circle:hover {
 	max-width: 200%;
 	width: 120%;
 	transform: translateX(-50%);
-	/* Thanks  @bastian_fiessinger. Use when activating blur effect:
-	will-change: -webkit-filter, filter, transform; */
 }
 
 
@@ -735,6 +757,8 @@ a.circle:hover {
   z-index: -1;
   width: 100%;
   background: transparent;
+  animation:
+    hideshow 5s 1,
 
 }
 
