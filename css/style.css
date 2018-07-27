@@ -948,6 +948,42 @@ position: absolute;
 /* Media */
 
 @media only screen
+and (min-width: 668px)
+and (max-width: 1024px )
+and (orientation: portrait){
+
+  .landing{
+    min-height: 33vh;
+  }
+
+  .rotated {
+    font-size: 81px;
+    position: absolute;
+    top: 5%;
+  }
+
+.biopic {
+  width: 100%;
+}
+
+  .arrowmove {
+    display:none;
+  }
+
+  .box{
+    min-height:33vh;
+  }
+
+  .bg {
+    height: 87vh;
+  }
+
+  .bg2 {
+    left: 0;
+  }
+}
+
+@media only screen
 and (min-width : 325px)
 and (max-width: 667px)
 and (orientation : portrait){
@@ -987,9 +1023,6 @@ and (orientation : portrait){
     z-index: -1;
 } */
 
-.current {
-    display: none;
-}
 
 #menu-button{
     z-index: 1002 !important;
@@ -1003,33 +1036,29 @@ and (orientation : portrait){
     z-index: 1001 !important;
 }
 
-.circle {
+/* .circle {
     bottom: 5%;
     right: 5%;
-}
+} */
 
 
 .row {
   margin: 0 !important;
 }
 
-.vid {
+/* .vid {
   padding: 20px 0px 50px 0px;
   width: 100%;
   max-width:100%;
-}
+} */
 
-
+/*
 .grow {
   width: 100%;
   margin-bottom: 30px;
-}
+} */
 
-#eletitle {
-    margin-top: 110px;
-    line-height: 0.5;
-    font-size: 40px;
-}
+
 
 ul #goals {
   padding-left: 10px;
