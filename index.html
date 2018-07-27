@@ -58,8 +58,10 @@
       <i class="fas fa-angle-up"></i></a>
 
     <div class="wrapper">
-  <div class="zoom bg"><img src="Images/Mockup.jpg" class="hideshow">
-  <div class="bg"></div></div>
+  <div class="bg">
+
+    <img src="Images/Mockup.jpg" class="bg2 hideshow paroller">
+  <!-- <div class="bg"></div> --> </div>
 
       <div class="wrapper2">
     <a id="top"></a>
@@ -88,8 +90,8 @@
     <div class="container-flex">
 
 
-      <div class="nav navhover fadeIn" style="margin-right:83px;"><a href="#">About/Contact</a></div>
-      <div class="nav navhover fadeIn"><a href="#">Portfolio</a>
+      <div class="nav navhover fadeIn" style="margin-right:83px;"><a href="#about">About/Contact</a></div>
+      <div class="nav navhover fadeIn"><a href="#portfolio">Portfolio</a>
       </div>
 
       <div class="rotated fadeIn">UX/UI<br>DESIGN</div>
@@ -128,10 +130,10 @@
 
     <div class="row arrowcontainer">
       <div class="col-12 arrowmove">
-        <a id="downarrow" style="font-size:30px;"><i class="fas fa-angle-down"></i></a>
+        <a id="downarrow" style="font-size:30px;" href="#about"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <a id="about"></a>
+    <a id="about" class="anchor"></a>
     <div class="row content no-gutters">
       <div class="col-6">
 
@@ -158,12 +160,12 @@
 </div>
 </div>
 
-<div class="container-flex section2" style="padding-top:7%;">
+<div class="container-flex section2" style="padding-top:7%;"><a id="portfolio" class="anchor2"></a>
 <div class="row no-gutters" style="background-color:#F7F7FE;">
-<div class="col-12" style="padding-top:2%;">
+<div class="col-12">
 <h3 style="right: 4%;top: -30px;">&lt;PORTFOLIO&gt;</h3>
 </div>
-<div style="width: 100%;margin: 0 auto;padding:5% 3%;" class="row">
+<div style="width: 100%;margin: 0 auto;padding:3% 3%;" class="row">
 <div class="col-4 projects">
   <a href="uxui">
     <figure>
@@ -201,8 +203,8 @@
   </a>
 </div>
 </div>
-<div class="col-12" style="padding-top:7%;">
-<h3 style="left: 4%;top: 50px;">&lt;/PORTFOLIO&gt;</h3>
+<div class="col-12">
+<h3 style="left: 4%;top: -45px;">&lt;/PORTFOLIO&gt;</h3>
 </div>
 </div>
 
@@ -219,25 +221,146 @@
   <div class="col-12" style="margin-bottom:5%; margin-left: -10;"><p style="text-align:left; font-family:'Open Sans';">SOME VISUAL INSPO:</div>
   <div class="col-4">
 
-    <a href="#" data-toggle="tooltip" title="Nightclub Il Grifoncino, 1968. Bolzano, Italy. Interior design by Cesare Casati."><img src="Images/nightclub.jpg" width="80%" class="delay2"></a>
-        <a href="#" data-toggle="tooltip" title="Photographer: Maurizio di Iorio">
-        <img src="Images/lychee.jpg" width="80%" style="margin-top:20%;" class="delay3"></a>
-    <a href="#" data-toggle="tooltip" title="Emporia shopping centre in Malmö by Wingårdhs. Photograph by Tord-Rikard Söderström."><img src="Images/emporia.jpg" width="80%" style="margin-top:20%;" class="delay4"></a>
-          <a href="#" data-toggle="tooltip" title="Hair and photograph by Shani Crowe."><img src="Images/hair.jpg" width="80%" style="margin-top:20%;" class="delay5"></a>
+    <ul class="caption-style-2">
+			<li class="delay2">
+				<img src="Images/nightclub.jpg">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1></h1>
+						<p>Nightclub Il Grifoncino, 1968. Bolzano, Italy. Interior design by Cesare Casati.</p>
+					</div>
+				</div>
+			</li>
+
+      <li class="delay3" style="margin-top:20%;">
+				<img src="Images/lychee.jpg">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1></h1>
+						<p>Photographer: Maurizio di Iorio</p>
+					</div>
+				</div>
+			</li>
+
+      <li class="delay4" style="margin-top:20%;">
+        <img src="Images/emporia.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>Emporia shopping centre in Malmö by Wingårdhs. Photograph by Tord-Rikard Söderström.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="delay5" style="margin-top:20%;">
+        <img src="Images/hair.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>Hairstyling and photograph by Shani Crowe</p>
+          </div>
+        </div>
+      </li>
+
   </div>
   <div class="col-4">
-    <a href="#" data-toggle="tooltip" title="Angelina Jolie for Harper's BAZAAR US by Alexi Lubomirski."><img src="Images/ange.jpg" width="80%" class="delay2"></a>
-        <a href="#" data-toggle="tooltip" title="GUCCI">
-          <img src="Images/gucci.jpg" width="80%" style="margin-top:20%;" class="delay3"></a>
-    <a href="#" data-toggle="tooltip" title="Artist unknown"><img src="Images/paint.jpg" width="80%" style="margin-top:20%;" class="delay4"></a>
-        <a href="#" data-toggle="tooltip" title=" Fragrance created by perfumer Yann Vasnier.">
-          <img src="Images/tomford.jpg" width="80%" style="margin-top:20%;" class="delay5"></a>
+    <ul class="caption-style-2">
+      <li class="delay2">
+        <img src="Images/ange.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>Angelina Jolie for Harper's BAZAAR US by Alexi Lubomirski.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="delay3" style="margin-top:20%;">
+        <img src="Images/gucci.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>GUCCI</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="delay4" style="margin-top:20%;">
+        <img src="Images/paint.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>Artist unknown</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="delay5" style="margin-top:20%;">
+        <img src="Images/tomford.jpg">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h1></h1>
+            <p>Fragrance created by perfumer Yann Vasnier.</p>
+          </div>
+        </div>
+      </li>
+
   </div>
+
   <div class="col-4">
-    <a href="#" data-toggle="tooltip" title="Photographer: Ben Hassett"><img src="Images/hassett.jpg" width="80%" class="delay2"></a>
-        <a href="#" data-toggle="tooltip" title="Mikel Cans Studio"><img src="Images/MikelCans.jpg" width="80%" style="margin-top:20%;" class="delay3"></a>
-    <a href="#" data-toggle="tooltip" title="Photographer unknown"><img src="Images/balen.jpg" width="80%" style="margin-top:20%;" class="delay4"></a>
-      <a href="#" data-toggle="tooltip" title="Santorini home of Costis Psychas. Photograph by William Abranowicz."><img src="Images/amalfi.png" width="80%" style="margin-top:20%;" class="delay5"></a>
+  <ul class="caption-style-2">
+    <li class="delay2">
+      <img src="Images/hassett.jpg">
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1></h1>
+          <p>Photographer: Ben Hassett</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="delay3" style="margin-top:20%;">
+      <img src="Images/MikelCans.jpg">
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1></h1>
+          <p>Mikel Cans Studio</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="delay4" style="margin-top:20%;">
+      <img src="Images/balen.jpg">
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1></h1>
+          <p>Photographer unknown</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="delay5" style="margin-top:20%;">
+      <img src="Images/amalfi.png">
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1></h1>
+          <p>Santorini home of Costis Psychas. Photograph by William Abranowicz.</p>
+        </div>
+      </div>
+    </li>
+
   </div>
 
 </div>
@@ -279,7 +402,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
 
-<script src="js/popover.js"></script>
+<script src="js/jquery.paroller.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
 <script src="js/quotes.js"></script>
 
 
@@ -296,31 +420,45 @@
         $("#menu").slideToggle("slow");
       });
 
-      // Scroll to anchor
-        $("#downarrow").on('click', function(event) {
-            var hash = $('#about');
-            console.log(about);
-            $('.wrapper').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-            });
-        });
+      // // Scroll to anchor
+      //   $("#downarrow").on('click', function(event) {
+      //       var hash = $('#about');
+      //       console.log(about);
+      //       $('.wrapper').animate({
+      //         scrollTop: $(hash).offset().top
+      //       }, 800, function(){
+      //       });
+      //   });
+      //
+      // var getInitialHash = location.hash;
+      // console.log(getInitialHash + " this is my test out put")
+      // // Hi Alex, i really did not change to much. The problem was our if statement was not validating to true. i just set the location hash outside of our if statement and removed the document.ready function (it was not necessary). I also removed all the script tags seperating your javascript code (it is also unnecessary and makes finding functions easier).
+      // //This now works. Try it out!
+      //   if ( getInitialHash == "#about" ) {
+      //     console.log(location.hash);
+      //     var hash2 = location.hash;
+      //     console.log(hash2);
+      //     $('html, body').animate({
+      //     scrollTop: $(hash2).offset().top
+      //   }, 2000, function(){
+      //       window.location.hash = hash2;
+      //       console.log("IT WURKED");
+      //     });
+      //   };
 
-      var getInitialHash = location.hash;
-      console.log(getInitialHash + " this is my test out put")
-      // Hi Alex, i really did not change to much. The problem was our if statement was not validating to true. i just set the location hash outside of our if statement and removed the document.ready function (it was not necessary). I also removed all the script tags seperating your javascript code (it is also unnecessary and makes finding functions easier).
-      //This now works. Try it out!
-        if ( getInitialHash == "#about" ) {
-          console.log(location.hash);
-          var hash2 = location.hash;
-          console.log(hash2);
-          $('html, body').animate({
-          scrollTop: $(hash2).offset().top
-        }, 2000, function(){
-            window.location.hash = hash2;
-            console.log("IT WURKED");
-          });
-        };
+
+// initialize paroller.js
+
+        $(".paroller, [data-paroller-factor]").paroller({
+                factor: 0.3,            // multiplier for scrolling speed and offset
+                factorXs: 0.1,          // multiplier for scrolling speed and offset if window width is <576px
+                factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+                factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+                factorLg: 0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+                type: 'background',     // background, foreground
+                direction: 'vertical' // vertical, horizontal
+            });
+
 
 //Link hover effect
 
@@ -337,6 +475,27 @@
         $(".a3").toggleClass('hover');
       $(".a3").mouseout(function(){
           $(this).removeClass("a4");
+        });
+      });
+
+
+      // Scroll to anchor
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+            console.log(hash);
+            $('.wrapper').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
         });
       });
 

@@ -101,7 +101,7 @@
   transform-style: preserve-3d;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 
 }
 
@@ -296,6 +296,70 @@ body {
 
 
 
+.caption-style-2{
+  width: 80%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+
+	}
+	.caption-style-2 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+	.caption-style-2 li:hover .caption{
+		opacity: 1;
+		transform: translateY(-100px);
+		-webkit-transform:translateY(-100px);
+		-moz-transform:translateY(-100px);
+		-ms-transform:translateY(-100px);
+		-o-transform:translateY(-100px);
+	}
+	.caption-style-2 img{
+		 width: 100%;
+	}
+	.caption-style-2 .caption{
+		position: absolute;
+		opacity: 0;
+		/* top:300px; */
+    width: 100%;
+		-webkit-transition:all 0.15s ease-in-out;
+		-moz-transition:all 0.15s ease-in-out;
+		-o-transition:all 0.15s ease-in-out;
+		-ms-transition:all 0.15s ease-in-out;
+		transition:all 0.15s ease-in-out;
+	}
+	.caption-style-2 .blur{
+    background-color: rgba(0,0,0,0.8);
+    height: 100px;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+	}
+	.caption-style-2 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	.caption-style-2 .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	}
+
+
+
+
+
+
 /*Blog Hover Effects*/
 
 figure {
@@ -468,7 +532,6 @@ figcaption a:hover {
 }
 
 .bio {
-  -webkit-font-smoothing: antialiased;
   padding-left: 0px;
   padding-right: 0px;
   margin-top: auto;
@@ -629,10 +692,21 @@ a.circle:hover {
 }
 
 .projects {
-  margin-top:5%;
+  margin:5% 0%;
   opacity: 0;
 }
 
+.anchor {
+  display:block;
+  top: 86vh;
+position: absolute;
+}
+
+.anchor2 {
+    display:block;
+    padding-top:50px;
+    margin-top:-50px;
+ }
 
 .section1 {
   position: relative;
@@ -762,8 +836,21 @@ a.circle:hover {
 
 }
 
+.credits {
+  font-style: normal;
+
+}
+
 .bg2 {
-  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -100px;
+  perspective: 1px;
+  position: fixed;
+  top: -100px;
+  /* left: 50%; */
+  /* max-width: 200%; */
+  width: 100%;
 }
 
 .biopic {
