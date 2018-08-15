@@ -942,17 +942,119 @@ position: absolute;
     }
 }
 
+.mobile {
+  display: none;
+}
+
+.mobile2 {
+  display: none;
+}
 
 
 
 /* Media */
 
 @media only screen
-and (min-width: 668px)
-and (max-width: 1024px )
+and (min-width: 310px)
+and (max-width: 414px )
 and (orientation: portrait){
 
+  .mobile {
+    display: block;
+    margin-top: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 50%;
+    height: 74vw;
+    color: #FFF;
+    background-color: #000;
+  }
+
+  .mobile2 {
+    display: block;
+    text-align: left;
+    padding: 10%;
+    font-size:11px;
+
+  }
+
+  #menu {
+    font-size: 2.2rem;
+  }
+
+  #menu a {
+    font-family: "Playfair";
+    font-size: 20;
+  }
+
+  .bottom{
+    margin-top: 45%;
+  }
+
+  .mobile2 a {
+    color: #CCC;
+    font-weight: 100;
+  }
+
+  .moble2 a:hover{
+    color: #CCC;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .rotated {
+    display: none;
+  }
+
   .landing{
+    display: none;
+  }
+
+  .bg {
+    height: auto;
+  }
+
+  .bg2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    perspective: 1px;
+    position: fixed;
+    left: -50%;
+    height: 100vh;
+    width: auto;
+    top: -150;
+  }
+
+  .hideshow{
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+  }
+
+  .arrowcontainer {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+
+  #footer1 {
+    display: none;
+  }
+
+  .section2 {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  /* .landing{
     min-height: 33vh;
   }
 
@@ -981,7 +1083,7 @@ and (orientation: portrait){
   .bg2 {
     left: 0;
   }
-}
+} */
 
 @media only screen
 and (min-width : 325px)
@@ -989,7 +1091,7 @@ and (max-width: 667px)
 and (orientation : portrait){
 
 
-.header {
+/* .header {
     height: 66px;
     position: fixed;
     left: 0;
@@ -1004,7 +1106,7 @@ and (orientation : portrait){
 
 .navlink {
   display: none;
-}
+} */
 
 /* .bg {
   display: none;

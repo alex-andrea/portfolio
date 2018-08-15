@@ -12,8 +12,8 @@ and (orientation : portrait){
   position: fixed;
   cursor: pointer;
   transition: all linear .3s;
-  margin-left: 20px;
-  margin-top: 23px;
+  margin-left: 30px;
+  margin-top: 10%;
   z-index: 2;
 }
 
