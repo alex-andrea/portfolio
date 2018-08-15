@@ -109,6 +109,7 @@ a:hover{
 .nav {
     top: 47px;
     position: absolute;
+    right: 33px;
     z-index: 1000;
     font-family: 'Playfair';
 }
@@ -116,7 +117,7 @@ a:hover{
 .navhover {
   top: 47px;
   position: absolute;
-  left: 33px;
+  right: 33px;
   z-index: 1000;
   font-family: 'Playfair';
 }
