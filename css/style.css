@@ -969,6 +969,7 @@ and (orientation: portrait){
     color: #FFF;
     background-color: #000;
     overflow: hidden;
+    animation: fadeIn 2s;
   }
 
   .mobile2 {
