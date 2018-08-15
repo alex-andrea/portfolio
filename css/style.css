@@ -979,8 +979,8 @@ and (orientation: portrait){
   .mobile2 {
     display: block;
     text-align: left;
-    padding: 10%;
-    font-size:13px;
+    padding: 16%;
+    font-size:12px;
 
   }
 
@@ -998,7 +998,7 @@ and (orientation: portrait){
   }
 
   .bottom{
-    margin-top: 40%;
+    margin-top: 18%;
   }
 
   .mobile2 a {
