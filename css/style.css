@@ -972,6 +972,10 @@ and (orientation: portrait){
     animation: fadeIn 2s;
   }
 
+  #title {
+    animation: fadeIn 1s;
+  }
+
   .mobile2 {
     display: block;
     text-align: left;
