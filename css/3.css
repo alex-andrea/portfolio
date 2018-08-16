@@ -91,6 +91,7 @@
 
 a {
   color: black;
+  font-family: 'Playfair';
 }
 
 
@@ -100,8 +101,8 @@ a:hover{
   text-decoration: none;
 }
 
-.hover {
-  color: lightgray; }
+/* .hover {
+  color: lightgray; } */
 
 
 #title {
@@ -112,12 +113,25 @@ a:hover{
 }
 
 #eletitle {
-  margin-top:130px;
+  margin-top:30px;
+}
+
+#vid {
+  margin-top: 100px;
+}
+
+#logo {
+  width: 187px;
+  padding-bottom: 10px;
+  display: inline;
+  position: relative;
+  top: 46px;
 }
 
 .nav {
     top: 47px;
     position: absolute;
+    right: 33px;
     z-index: 1000;
     font-family: 'Playfair';
 }
@@ -125,7 +139,7 @@ a:hover{
 .navhover {
   top: 47px;
   position: absolute;
-  left: 33px;
+  right: 33px;
   z-index: 1000;
   font-family: 'Playfair';
 }
@@ -163,16 +177,6 @@ a:hover{
   color: #FFF;
 }
 
-.popover {
-  top: 11px !important;
-  border: none !important;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) !important;
-}
-
-.popover-body {
-    background-color: #242424 !important;
-    padding: .75rem .75rem;
-}
 
 .arrow:after {
   border-bottom-color: #242424 !important;
@@ -180,22 +184,6 @@ a:hover{
 
 .arrow:before{
   top: 1px !important;
-}
-
-a.contact:hover{
-  color: #FFFFFF;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 12;
-  font-family: 'Open Sans', sans-serif;
-}
-
-a.contact{
-  color: #FFFFFF;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 12;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #hamburger {
@@ -226,17 +214,32 @@ h2 {
 }
 
 h3 {
-  font-family: 'Kiona', sans-serif;
+  font-family: 'Playfair', serif;
   font-size: 26;
-  font-weight: 400;
+  font-weight: Regular;
   letter-spacing: 2px;
   text-align: left;
-  padding: 0;
-  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.currentlink {
+  font-size: 13px;
 }
 
 .delay{
 
+}
+
+.current {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+#content {
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 .content{
@@ -244,16 +247,15 @@ h3 {
   padding: 7% 11% 7% 11%;
   text-align: justify;
   color: #000000;
-  font-size: 15;
+  font-size: 20;
   font-family: 'Open Sans';
   font-weight: 100;
-  margin-top: 110px;
 }
 
 .vid {
   width: 80%;
   max-width: 800px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 body {
@@ -266,7 +268,7 @@ body {
 }
 
 .layer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -649,11 +651,6 @@ and (orientation : portrait){
     margin-top: 110px;
     line-height: 0.5;
     font-size: 40px;
-}
-
-h3 {
-  font-size: 20;
-  text-align: center;
 }
 
 ul #goals {
