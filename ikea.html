@@ -35,7 +35,7 @@
       <div class="wrapper">
       <div class="bg">
 
-      <img src="Images/ikea.jpeg" class="bg2 paroller">
+      <img src="Images/ikea/ikea.jpeg" class="bg2 paroller">
 
       <!-- <div class="bg2"></div> --></div>
 
@@ -51,6 +51,7 @@
         </div>
         <div id="menu">
           <ul>
+            <li><a href="index">Home</a></li>
             <li><a href="happyelephant">Happy Elephant</a></li>
             <li><a href="kiva">Kiva</a></li>
             <li><a href="ikea">IKEA</a></li>
@@ -86,40 +87,68 @@
         <!-- <img src="Images/elephantlanding.jpg" style=" max-width: 70%; padding-top: 3%;"> -->
 
         <video class="vid" autoplay muted playsinline>
-    <source src="Images/ikea.mp4" type="video/mp4">
-      <source src="Images/ikea.ogg" type="video/ogg">
+    <source src="Images/ikea/ikea.mp4" type="video/mp4">
+      <source src="Images/ikea/ikea.ogg" type="video/ogg">
   </video>
       </div>
     </div>
 
     <div class="row no-gutters">
       <div class="col fade-in" id="eletitle">
-        <img src="Images/ikealogo.png" id="logo">
+        <img src="Images/ikea/ikealogo.png" id="logo">
       </div>
     </div>
 
     <div class="row content no-gutters">
       <div class="col-4 delay">
-        <img src="Images/ikeacurrent.jpg" class="current"><p>
-          <img src="Images/ikeacurrent1.jpg" class="current">
+        <img src="Images/ikea/current.jpg" class="current"><p>
+          <img src="Images/ikea/current2.jpg" class="current">
       </div>
       <div class="col-8 delay" id="content">
-    <h3>Website Redesign / August 2018</h3>
-    <p style="color:#5d5d5d;">
-      I worked in a group of three to evaluate and redesign the IKEA website to provide a better user experience. We spent one week completely redesigning the website using all IKEA images to present a more polished version of the IKEA brand. We spend and additional week conducting user testing via UsabilityHub.
-      <p>
-      <a href="www.ikea.com">ikea.com</a>
-      <br><span class="currentlink">
-      &#8592; screens from IKEA’s current website</span>
-</div>
-<div class="col-12 delay">
-<h3 style="padding-top:30px;">Wireframe</h3>
-<p style="text-align: right;">
-<img src="Images/ikeawireframe.png" width="100%">
-  <!-- <p style="padding-top:30px; color:#5d5d5d;"> -->
+        <h3>Website Redesign / August 2018</h3>
+        <p style="color:#5d5d5d;">
+          I worked in a group of three to evaluate and redesign the <span class="underline--magical">IKEA</span> website to provide a better user experience. We spent one week completely redesigning the website using all <span class="underline--magical">IKEA</span> images to present a more polished version of the <span class="underline--magical">IKEA</span> brand. We spent an additional week conducting user testing via UsabilityHub.
+          <p>
+          <a href="www.ikea.com">ikea.com</a>
+          <br><span class="currentlink">
+          &#8592; screens from IKEA’s current website</span>
+      </div>
+      <div class="col-12 delay2 content2" id="mood">
+        <h3 style="padding-top:30px;"></h3>
+        <p style="text-align: center;">
+        <img src="Images/ikea/ikeamood.png" width="100%" id="wireframe" style="margin-bottom:0;">
+        <p style="color:#5d5d5d; text-align:left; padding-top:3%; padding-left:5%;">
+          <span class="underline--magical">IKEA</span> has great photos that we wanted<br>
+          our design to highlight.</p>
+      </div>
 
-</div>
-</div>
+      <div class="col-12 delay3 content2">
+        <h3 style="padding-top:10px;"></h3>
+        <p style="text-align: right;">
+        <img src="Images/ikea/ikeawireframe.png" width="100%" id="wireframe">
+          <!-- <p style="padding-top:30px; color:#5d5d5d;"> -->
+      </div>
+    </div>
+
+
+
+    <div class="row bg3 no-gutters">
+      <div class="col-6 screen delay4">
+        <img src="Images/ikea/screen1.png" class="screens"><p>
+        <img src="Images/ikea/screen2.png" class="screens" style="margin-bottom:0px;">
+      </div>
+      <div class="col-6 screen2 delay5">
+          <img src="Images/ikea/screen3.png" class="screens"><p>
+          <img src="Images/ikea/screen4.png" class="screens"><p>
+          <img src="Images/ikea/screen5.png" class="screens" style="margin-bottom:0px;"><p>
+      </div>
+    </div>
+
+    <div class="row content no-gutters" style="padding:30% 30% 15% 30%;">
+      <div class="col-12 delay6">We used UsabilityHub to test our wireframe against a wireframe of <span class="underline--magical">IKEA</span>'s current layout. We gave users instructions to find a specific <span class="underline--magical">IKEA</span> product. Our layout resulted in a <span style="font-weight:bold;">1779.43%</span> increase in task completion compared to <span class="underline--magical">IKEA</span>'s current layout.</div>
+    </div>
+    <div class="navbottom navbottomhover fadeIn"><a href="index.html#portfolio">Back to Portfolio</a>
+    </div>
 
 
 <!-- Copyright -->
@@ -222,6 +251,42 @@ $('.wrapper').scroll(function(){
     // $('.delay').removeClass("slide-up-fade-in");}
 });
 
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 1000) {
+    $('.delay2').addClass("slide-up-fade-in");
+    }
+});
+
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 1800) {
+    $('.delay3').addClass("slide-up-fade-in");
+    }
+});
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 2500) {
+    $('.delay4').addClass("slide-up-fade-in");
+    }
+});
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 2700) {
+    $('.delay5').addClass("slide-up-fade-in");
+    }
+});
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 3500) {
+    $('.delay6').addClass("slide-up-fade-in");
+    }
+});
+
 //Scroll to top when arrow up clicked BEGIN
 $('.wrapper').scroll(function(e) {
     var height = $('.wrapper').scrollTop();
@@ -240,6 +305,8 @@ $(document).ready(function() {
 
 });
  //Scroll to top when arrow up clicked END
+
+
 
 </script>
 
