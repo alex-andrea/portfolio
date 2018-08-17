@@ -121,11 +121,12 @@ a:hover{
 }
 
 #logo {
-  width: 187px;
-  padding-bottom: 10px;
-  display: inline;
-  position: relative;
-  top: 46px;
+  width: 400;
+    padding-bottom: 10px;
+    display: inline;
+    position: relative;
+    top: 63px;
+    left: 5px;
 }
 
 .nav {
@@ -219,7 +220,7 @@ h3 {
   font-weight: Regular;
   letter-spacing: 2px;
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 .currentlink {
@@ -227,7 +228,7 @@ h3 {
 }
 
 .delay{
-
+  opacity: 0;
 }
 
 .current {
@@ -238,13 +239,13 @@ h3 {
 
 
 #content {
-  padding-left: 5%;
+  padding-left: 10%;
   padding-top: 5%;
 }
 
 .content{
   background-color: white;
-  padding: 7% 11% 7% 11%;
+  padding: 11% 11% 7% 11%;
   text-align: justify;
   color: #000000;
   font-size: 20;
@@ -466,20 +467,19 @@ a.circle:hover {
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100%;
-  background-image: url('../Images/ikea.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -100px;
-  -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
-  -moz-animation: fadeIn 1.8s; /* Fx 5+ */
-  -o-animation: fadeIn 1.8s; /* Opera 12+ */
-  animation: fadeIn 1.8s;
-  perspective: 1px;
+  background: transparent;
 
 }
 
 .bg2 {
-  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  perspective: 1px;
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  animation: fadeIn 2s;
 }
 
 /* Slide Up, Fade In */
@@ -648,7 +648,7 @@ and (orientation : portrait){
 }
 
 #eletitle {
-    margin-top: 110px;
+    /* margin-top: 110px; */
     line-height: 0.5;
     font-size: 40px;
 }
