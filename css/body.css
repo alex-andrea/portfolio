@@ -7,12 +7,11 @@
     background: #4C4444;
 }
 
-
-@font-face {
-  font-family: 'SantaFe';
-  src: url('../Fonts/santafe.ttf');
-  src: url('../Fonts/santafe.ttf')  format('truetype');
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 @font-face {
   font-family: 'Playfair';
@@ -97,13 +96,38 @@
 
 a {
   color: black;
-  text-decoration: none;
+  font-family: 'Playfair';
 }
+
 
 a:hover{
   color: #000000;
   font-weight: 100;
   text-decoration: none;
+}
+
+/* .hover {
+  color: lightgray; } */
+
+
+#title {
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 3;
+  position: relative;
+}
+
+#vid {
+  margin-top: 130px;
+}
+
+#logo {
+  width: 500;
+    padding-bottom: 10px;
+    display: inline;
+    position: relative;
+    top: 63px;
+    left: 5px;
 }
 
 .nav {
@@ -112,6 +136,19 @@ a:hover{
     right: 33px;
     z-index: 1000;
     font-family: 'Playfair';
+}
+
+.navbottom {
+    z-index: 1000;
+    font-family: 'Playfair';
+}
+
+.navbottomhover{
+  bottom: 60px;
+position: absolute;
+right: 60px;
+z-index: 1000;
+font-family: 'Playfair';
 }
 
 .navhover {
@@ -141,26 +178,31 @@ a:hover{
   transition: all 0.3s ease-in-out 0s;
 }
 
+.navbottomhover > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 .navhover > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-
-#title {
-  margin: 0 auto;
-  padding-top: 19px;
-  padding-bottom: 3;
-  position: relative;
-}
-
-#eletitle {
-  margin-top:140px;
-  color: #FFF;
-  font-size: 45px;
-  line-height: 0.8;
-  font-family: SantaFe;
+.navbottomhover > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .projtype {
@@ -171,16 +213,6 @@ a:hover{
   color: #FFF;
 }
 
-.popover {
-  top: 11px !important;
-  border: none !important;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) !important;
-}
-
-.popover-body {
-    background-color: #242424 !important;
-    padding: .75rem .75rem;
-}
 
 .arrow:after {
   border-bottom-color: #242424 !important;
@@ -188,22 +220,6 @@ a:hover{
 
 .arrow:before{
   top: 1px !important;
-}
-
-a.contact:hover{
-  color: #FFFFFF;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 12;
-  font-family: 'Open Sans', sans-serif;
-}
-
-a.contact{
-  color: #FFFFFF;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 12;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #hamburger {
@@ -234,34 +250,108 @@ h2 {
 }
 
 h3 {
-  font-family: 'Kiona', sans-serif;
+  font-family: 'Playfair', serif;
   font-size: 26;
-  font-weight: 400;
+  font-weight: Regular;
   letter-spacing: 2px;
   text-align: left;
-  padding: 0;
-  font-style: italic;
+  padding-bottom: 25px;
 }
 
-.delay{
+.currentlink {
+  font-size: 13px;
+}
 
+
+.current {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#laptop {
+  display: inline;
+    position: relative;
+    width: 80%;
+    margin-top: 15%;
+}
+
+#ipad{
+    display: inline;
+    position: relative;
+    width: 35%;
+    top: -350px;
+    right: -525px;
+}
+
+#mood {
+  padding: 5% 10%;
+}
+
+#content {
+  padding-left: 10%;
+  padding-top: 2.5%;
+}
+
+#wireframe {
+  position: relative;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #c7f2c3 0%, #97d060 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in;
+}
+
+.screen {
+  max-width: 30%;
+  margin: 5% 5% 0% 15%;
+  display: inline;
+  position: relative;
+  top: 70px;
+}
+
+.screen2 {
+  max-width: 30%;
+  margin: 0% 15% 0% 5%;
+  display: inline;
+  position: relative;
+  top: 150px;
+}
+
+.screens {
+  width: 100%;
+  margin-bottom: 10%;
+  box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .content{
-  background-color: white;
-  padding: 7% 11% 7% 11%;
+  background-image: url('../Images/whitetile2.jpg');
+  padding: 11% 11% 7% 11%;
   text-align: justify;
   color: #000000;
-  font-size: 15;
+  font-size: 20;
   font-family: 'Open Sans';
   font-weight: 100;
-  margin-top: 110px;
 }
+
+.content2 {
+  padding-top: 5%;
+}
+
+.delay, .delay2, .delay3, .delay4, .delay5, .delay6{
+  opacity: 0;
+}
+
 
 .vid {
   width: 80%;
   max-width: 800px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 body {
@@ -271,18 +361,17 @@ body {
   font-style: normal;
   display: block;
   color: #000000;
-
 }
 
-/* .layer {
-    background-color: rgba(0, 0, 0, 0.5);
+.layer {
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-} */
+}
 
 
 .left {
@@ -330,7 +419,7 @@ body {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 93;
   padding: 10 0 15 0;
@@ -339,7 +428,7 @@ body {
   z-index: 100;
 }
 
-/* .circle {
+.circle {
   height: 60px;
   width: 60px;
   background-color: #E16969;
@@ -379,7 +468,7 @@ a.circle:hover {
     right: 15px;
     width: 25px;
     z-index: 1000;
-} */
+}
 
 .section1 {
   position: relative;
@@ -473,20 +562,30 @@ a.circle:hover {
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100%;
-  background-image: url('../Images/fernyhole.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -100px;
-  -webkit-animation: fadeIn 1.8s; /* Safari 4+ */
-  -moz-animation: fadeIn 1.8s; /* Fx 5+ */
-  -o-animation: fadeIn 1.8s; /* Opera 12+ */
-  animation: fadeIn 1.8s;
-  perspective: 1px;
+  background: transparent;
 
 }
 
+.bg3 {
+  background: url('../Images/ikea/ikeabg2.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+
 .bg2 {
-  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  perspective: 1px;
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  animation: fadeIn 2s;
 }
 
 /* Slide Up, Fade In */
@@ -520,7 +619,7 @@ a.circle:hover {
 @keyframes slide-up-fade-in{
     0% {
         opacity:0;
-        transform:  translate(0px,60px)  ;
+        transform:  translate(0px,80px)  ;
     }
     100% {
         opacity:1;
@@ -531,7 +630,7 @@ a.circle:hover {
 @-moz-keyframes slide-up-fade-in{
     0% {
         opacity:0;
-        -moz-transform:  translate(0px,60px)  ;
+        -moz-transform:  translate(0px,80px)  ;
     }
     100% {
         opacity:1;
@@ -542,7 +641,7 @@ a.circle:hover {
 @-webkit-keyframes slide-up-fade-in {
     0% {
         opacity:0;
-        -webkit-transform:  translate(0px,60px)  ;
+        -webkit-transform:  translate(0px,80px)  ;
     }
     100% {
         opacity:1;
@@ -553,7 +652,7 @@ a.circle:hover {
 @-o-keyframes slide-up-fade-in {
     0% {
         opacity:0;
-        -o-transform:  translate(0px,60px)  ;
+        -o-transform:  translate(0px,80px)  ;
     }
     100% {
         opacity:1;
@@ -564,7 +663,7 @@ a.circle:hover {
 @-ms-keyframes slide-up-fade-in {
     0% {
         opacity:0;
-        -ms-transform:  translate(0px,60px)  ;
+        -ms-transform:  translate(0px,80px)  ;
     }
     100% {
         opacity:1;
@@ -577,107 +676,44 @@ a.circle:hover {
 /* Media */
 
 @media only screen
-and (min-width: 310px)
-and (max-width: 414px )
-and (orientation: portrait){
+and (min-width : 325px)
+and (max-width: 667px)
+and (orientation : portrait){
 
-  #title {
-    animation: fadeIn 2s;
-  }
 
-  #eletitle {
-    animation: fadeIn 2s;
-  }
-
-  .mobile2 {
-    display: block;
-    text-align: left;
-    padding: 16%;
-    font-size:12px;
-
-  }
-
-  #menu {
-    font-size: 2.2rem;
-  }
-
-  #menu a {
-    font-family: "Playfair";
-    font-size: 20;
-  }
-
-  #menu-button {
-    animation: fadeIn 2s;
-  }
-
-  .bottom{
-    margin-top: 18%;
-  }
-
-  .mobile2 a {
-    color: #CCC;
-    font-weight: 100;
-  }
-
-  .moble2 a:hover{
-    color: #CCC;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .rotated {
-    display: none;
-  }
-
-  .landing{
-    display: none;
-  }
-
-  /* .bg {
-    height: auto;
-  }
-
-  .bg2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    perspective: 1px;
+.header {
+    height: 66px;
     position: fixed;
-    left: -50%;
-    height: 100vh;
-    width: auto;
-    top: -150;
-    overflow: hidden;
-  } */
+    left: 0;
+}
 
-    /* .header {
-    width: 100vw;
-    height: 93px;
-    padding: 10 0 15 0;
-    background-color: #FFFFFF;
-    z-index: 100;
-    position: absolute;
-    } */
-
-  .hideshow{
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    animation: fadeIn 2s;
-  }
-
-  .arrowcontainer {
-    display: none;
-  }
-
-  .box {
-    display: none;
-  }
+.search {
+  padding-top: 26px;
+  position: fixed;
+  width: 23px;
+  right: 10px;
+}
 
 .navlink {
   display: none;
 }
+
+/* .bg {
+  display: none;
+}
+
+.bg2 {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    top: -200px;
+    position: fixed;
+    background-position: center 60px;
+    background-image: url("../Images/fernyhole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} */
 
 .current {
     display: none;
@@ -695,15 +731,20 @@ and (orientation: portrait){
     z-index: 1001 !important;
 }
 
+.circle {
+    bottom: 5%;
+    right: 5%;
+}
+
+
 .row {
   margin: 0 !important;
 }
 
 .vid {
-  padding: 20px 25px 50px;
+  padding: 20px 0px 50px 0px;
   width: 100%;
   max-width:100%;
-  animation: fadeIn 2s;
 }
 
 
@@ -713,14 +754,9 @@ and (orientation: portrait){
 }
 
 #eletitle {
-    margin-top: 135px;
+    /* margin-top: 110px; */
     line-height: 0.5;
     font-size: 40px;
-}
-
-h3 {
-  font-size: 20;
-  text-align: center;
 }
 
 ul #goals {
@@ -728,15 +764,11 @@ ul #goals {
 }
 
 #footer1 {
- display: none;
+  margin: 0px;
 }
 
 #title2 {
   margin-top:100px;
 }
-
-#back2Top {
-    bottom: 0px;
-  }
 
 }

@@ -7,6 +7,11 @@
     background: #4C4444;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 @font-face {
   font-family: 'Playfair';
