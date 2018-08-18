@@ -251,7 +251,7 @@ h2 {
 
 h3 {
   font-family: 'Playfair', serif;
-  font-size: 26;
+  font-size: 1.89vw;
   font-weight: Regular;
   letter-spacing: 2px;
   text-align: left;
@@ -294,7 +294,7 @@ margin-top: 15%;
 
 #content {
   padding-left: 10%;
-  padding-top: 2.5%;
+  padding-top: 6%;
 }
 
 #wireframe {
@@ -338,7 +338,7 @@ margin-top: 15%;
   padding: 11% 11% 7% 11%;
   text-align: justify;
   color: #000000;
-  font-size: 20;
+  font-size: 1.3vw;
   font-family: 'Open Sans';
   font-weight: 100;
 }
