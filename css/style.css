@@ -949,6 +949,10 @@ position: absolute;
   display: none;
 }
 
+.bgmobile {
+  display: none;
+}
+
 
 
 /* Media */
@@ -957,6 +961,23 @@ position: absolute;
 and (min-width: 310px)
 and (max-width: 414px )
 and (orientation: portrait){
+
+  .zoom {
+    display: none;
+  }
+
+  .bgmobile {
+      display: flex;
+      flex: 1 0 auto;
+      position: relative;
+      height: 150vh;
+      transform: translateZ(-1px) scale(2);
+      z-index: -1;
+      width: 100%;
+      background: transparent;
+      animation:
+        hideshow 5s 1,
+    }
 
   .mobile {
     display: block;
