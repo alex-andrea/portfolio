@@ -270,7 +270,11 @@ h3 {
 }
 
 #mood {
-  padding: 5% 10%;
+  padding-right:5%;
+}
+
+#mood2 {
+  padding-left: 5%;
 }
 
 #content {
