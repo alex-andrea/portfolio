@@ -85,7 +85,7 @@
       <div class="col fade-in" id="vid">
 
 
-        <video class="vid" preload="auto" autoplay muted playsinline>
+        <video class="vid" id="preload" preload="auto" autoplay muted playsinline>
     <source src="Images/ikea/ikea.mp4" type="video/mp4">
       <source src="Images/ikea/ikea.ogg" type="video/ogg">
   </video>
@@ -236,7 +236,36 @@
         direction: 'vertical' // vertical, horizontal
     });
 
-// Carousel
+// preload video
+
+var video = document.getElementById("preload")
+
+var url = "Images/ikea/ikea.mp4"
+
+var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.responseType = "arraybuffer";
+
+        xhr.onload = function(oEvent) {
+
+            var blob = new Blob([oEvent.target.response], {type: "video/mp4"});
+
+            video.src = URL.createObjectURL(blob);
+
+            video.play()  //if you want it to play on load
+
+
+    };
+
+     xhr.onprogress = function(oEvent){
+
+      if(oEvent.lengthComputable) {
+         var percentComplete = oEvent.loaded/oEvent.total;
+        // do something with this
+       }
+     }
+
+    xhr.send();
 
 //Animate on scroll
 
