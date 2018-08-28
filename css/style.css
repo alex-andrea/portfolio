@@ -970,7 +970,7 @@ and (orientation: portrait){
       display: flex;
       flex: 1 0 auto;
       position: relative;
-      height: 150vh;
+      /* height: 150vh; */
       transform: translateZ(-1px) scale(2);
       z-index: -1;
       width: 100%;
