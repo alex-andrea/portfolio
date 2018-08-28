@@ -681,12 +681,12 @@ a.circle:hover {
 
 @media only screen
 and (min-width : 325px)
-and (max-width: 667px)
+and (max-width: 668px)
 and (orientation : portrait){
 
 
 .header {
-    height: 66px;
+    height: 93px;
     position: fixed;
     left: 0;
 }
@@ -698,26 +698,18 @@ and (orientation : portrait){
   right: 10px;
 }
 
-.navlink {
+.nav {
   display: none;
 }
 
 /* .bg {
   display: none;
-}
+} */
 
 .bg2 {
-    display: block;
     height: 100vh;
-    width: 100vw;
-    top: -200px;
-    position: fixed;
-    background-position: center 60px;
-    background-image: url("../Images/fernyhole.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-} */
+    width: auto;
+  }
 
 .current {
     display: none;
@@ -746,7 +738,7 @@ and (orientation : portrait){
 }
 
 .vid {
-  padding: 20px 0px 50px 0px;
+  padding: 20px 20px 0px 20px;
   width: 100%;
   max-width:100%;
 }
@@ -761,11 +753,21 @@ and (orientation : portrait){
     /* margin-top: 110px; */
     line-height: 0.5;
     font-size: 40px;
+    height: 11vh;
 }
 
-ul #goals {
-  padding-left: 10px;
+#logo {
+  width: 100vw;
+padding-bottom: 10px;
+display: inline;
+position: relative;
+top: 4vh;
+left: 0;
 }
+
+/* ul #goals {
+  padding-left: 10px;
+} */
 
 #footer1 {
   margin: 0px;
