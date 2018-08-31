@@ -658,6 +658,20 @@ h3 {
   padding-top: 10%;
   }
 
+.laptop {
+  display: inline;
+  position: relative;
+    left: -9%;
+    width: 78%;
+    margin-top: 15%;
+}
+
+.delaym, .delaym2 {
+  display: none;
+}
+
+
+
 .contentm{
   display: block;
   background-image: url('../Images/whitetile2.jpg');

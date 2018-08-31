@@ -141,8 +141,8 @@
   </div>
   <div class="col-12 content2" id="mood">
 
-    <img src="Images/el/laptop.png" id="laptop" class="delay2">
-    <img src="Images/el/ipad.png" id="ipad" class="delay3">
+    <img src="Images/el/laptop.png" class="delaym">
+    <img src="Images/el/ipad.png" class="delaym2">
 
   </div>
 
@@ -285,6 +285,20 @@ $('.wrapper').scroll(function(){
     var height = $('.wrapper').scrollTop();
     if(height > 3000) {
     $('.delay6').addClass("slide-up-fade-in");
+    }
+});
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 500) {
+    $('.delaym').addClass("slide-up-fade-in");
+    }
+});
+
+$('.wrapper').scroll(function(){
+    var height = $('.wrapper').scrollTop();
+    if(height > 600) {
+    $('.delaym2').addClass("slide-up-fade-in");
     }
 });
 
