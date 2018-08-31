@@ -688,11 +688,11 @@ and (orientation : portrait){
 
   #mood {
     margin: auto;
-    padding-top: 10%;
+    padding: 10% 0% 0% 0%;
   }
 
   .content2 {
-    padding-top: 0;
+    padding: 0;
   }
 
   .contentm{
@@ -705,6 +705,10 @@ and (orientation : portrait){
     font-family: 'Open Sans';
     font-weight: 100;
   }
+
+#wireframe {
+  margin: 15% 0%;
+}
 
   .header {
       height: 93px;
