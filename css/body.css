@@ -435,48 +435,6 @@ body {
   z-index: 100;
 }
 
-.circle {
-  height: 60px;
-  width: 60px;
-  background-color: #E16969;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 9%;
-  right: 7%;
-  z-index: 100;
-  display: block;
-  line-height: 1.2;
-}
-
-a.circle {
-  font-family: 'Kiona' !important;
-  font-size: 11px;
-  font-weight: 300;
-  font-style: normal;
-  color: #842929;
-  letter-spacing: 0.8px;
-}
-
-a.circle:hover {
-  box-shadow: 0px 0px 1px rgba(132, 0, 0, 1);
-  color: #571111;
-}
-
-.incircle {
-  display: table-cell;
-  padding: 1em;
-  vertical-align: middle;
-}
-
-.search {
-    padding-top: 22px;
-    padding-right: 10;
-    position: fixed;
-    right: 15px;
-    width: 25px;
-    z-index: 1000;
-}
-
 .section1 {
   position: relative;
   display: block;
@@ -495,7 +453,7 @@ a.circle:hover {
     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-indicators {
+/* .carousel-indicators {
   bottom:-50px;
 }
 
@@ -527,7 +485,7 @@ a.circle:hover {
 
 .carousel-indicators li {
   background-color: #999999;
-}
+} */
 
 #copyright {
   text-align: left;
@@ -679,6 +637,9 @@ a.circle:hover {
 }
 
 
+.contentm {
+  display: none;
+}
 
 /* Media */
 
@@ -687,10 +648,30 @@ and (min-width : 325px)
 and (max-width: 668px)
 and (orientation : portrait){
 
+h3 {
+  font-family: 'Playfair', serif;
+  font-size: 4.5vw;
+  font-weight: Regular;
+  letter-spacing: 2px;
+  text-align: left;
+  padding-bottom: 25px;
+  padding-top: 10%;
+  }
+
+.contentm{
+  display: block;
+  background-image: url('../Images/whitetile2.jpg');
+  padding: 11% 11% 7% 11%;
+  text-align: justify;
+  color: #000000;
+  font-size: 3.5vw;
+  font-family: 'Open Sans';
+  font-weight: 100;
+}
 
 .header {
     height: 93px;
-    position: fixed;
+    position: absolute;
     left: 0;
 }
 
@@ -705,6 +686,10 @@ and (orientation : portrait){
   display: none;
 }
 
+.navbottom {
+  display: none;
+}
+
 /* .bg {
   display: none;
 } */
@@ -714,7 +699,7 @@ and (orientation : portrait){
     width: auto;
   }
 
-.current {
+.current, .content {
     display: none;
 }
 
