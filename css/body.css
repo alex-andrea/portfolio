@@ -659,15 +659,9 @@ h3 {
   }
 
 .laptop {
-  display: inline;
-  position: relative;
-    left: -9%;
-    width: 78%;
-    margin-top: 15%;
-}
-
-.delaym, .delaym2 {
-  display: none;
+  width: 100%;
+  margin-left: -15%;
+  margin-top: 10%;
 }
 
 
