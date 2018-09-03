@@ -218,9 +218,9 @@ h1 a {
 h2 {
   font-family: 'DIN', sans-serif;
   font-weight: bold;
-  font-size: 25;
+  font-size: 2vw;
   text-align: center;
-  padding-top: 7%;
+  padding-top: 10%;
   font-style: none;
 }
 
@@ -270,7 +270,7 @@ a.btn-outline-danger:hover{
   background-color: white;
   padding: 10% 10% 10% 10%;
   color: #000000;
-  font-size: 15;
+  font-size: 1.1vw;
   font-family: 'Open Sans';
   font-weight: 100;
   /* margin-top: 110px; */
