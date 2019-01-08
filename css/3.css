@@ -289,7 +289,6 @@ h3 {
   position: relative;
   align-items: center;
   margin-bottom: 15%;
-  margin-top: 3%;
 }
 
 #persona {
@@ -346,7 +345,7 @@ h3 {
   padding-top: 5%;
 }
 
-.delay, .delay2, .delay3, .delay4, .delay5, .delay6{
+.delay, .delay2, .delay3, .delay4, .delay5, .delay6, .delay7{
   opacity: 0;
 }
 
@@ -711,13 +710,13 @@ and (orientation : portrait){
   }
 
   .content2 {
-    padding: 0;
+    padding: 10% 0% 0% 0%;
   }
 
   .contentm{
     display: block;
     background-image: url('../Images/whitetile2.jpg');
-    padding: 11% 11% 7% 11%;
+    padding: 15% 11% 7% 11%;
     text-align: justify;
     color: #000000;
     font-size: 3.5vw;
@@ -726,7 +725,7 @@ and (orientation : portrait){
   }
 
 #wireframe {
-  margin: 15% 0%;
+  margin: 10% 0% 0% 0%;
 }
 
   .header {
