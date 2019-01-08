@@ -19,6 +19,14 @@
 }
 
 @font-face {
+    font-family: 'Playfair';
+    font-weight: bold;
+    src: url('../Fonts/PlayfairDisplay-Bold.ttf');
+    src: url("../Fonts/PlayfairDisplay-Bold.ttf")
+    format('truetype');
+}
+
+@font-face {
   font-family: 'Kiona';
   src: url('../Fonts/Kiona.ttf');
   src: url('../Fonts/Kiona.ttf')  format('truetype');
@@ -251,7 +259,7 @@ h2 {
 h3 {
   font-family: 'Playfair', serif;
   font-size: 1.89vw;
-  font-weight: Regular;
+  font-weight: Bold;
   letter-spacing: 2px;
   text-align: left;
   padding-bottom: 25px;
@@ -281,6 +289,17 @@ h3 {
   position: relative;
   align-items: center;
   margin-bottom: 15%;
+  margin-top: 3%;
+}
+
+#persona {
+  position: relative;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+#persona img {
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
 }
 
 .underline--magical {
@@ -472,7 +491,7 @@ a.circle:hover {
     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-indicators {
+/* .carousel-indicators {
   bottom:-50px;
 }
 
@@ -504,7 +523,7 @@ a.circle:hover {
 
 .carousel-indicators li {
   background-color: #999999;
-}
+} */
 
 #copyright {
   text-align: left;
@@ -674,7 +693,7 @@ and (orientation : portrait){
   h3 {
     font-family: 'Playfair', serif;
     font-size: 4.5vw;
-    font-weight: Regular;
+    font-weight: Bold;
     letter-spacing: 2px;
     text-align: left;
     padding-bottom: 25px;
