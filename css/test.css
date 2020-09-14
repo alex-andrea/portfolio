@@ -1,0 +1,302 @@
+html {
+  font-size: 1vw;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #4C4444;
+}
+::selection {
+    color: white;
+    background: #4C4444;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../Fonts/PlayfairDisplay-Regular.ttf');
+  src: url('../Fonts/PlayfairDisplay-Regular.ttf')  format('truetype');
+}
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 2s; /* Safari 4+ */
+  -moz-animation: fadeIn 2s; /* Fx 5+ */
+  -o-animation: fadeIn 2s; /* Opera 12+ */
+  animation: fadeIn 2s;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  height: 100%;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #FFF;
+}
+
+.containerMain{
+  height: 95vh;
+  background-color: #E1DDD7;
+}
+
+.sectionMain{
+  position: relative;
+  display: block;
+}
+
+.photobio{
+  z-index: 2;
+}
+
+.navMain{
+      top: 3.5vh;
+      position: fixed;
+      right: 6vw;
+      z-index: 2;
+      margin: 0;
+      font-family: 'Juana-ExtraLight';
+      font-size: 0.8vw;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+
+.bodylink{
+  font-weight: 400;
+  color: #B19F7C;
+  opacity: 100%;
+}
+
+.navlink:hover{
+  color: red;
+  text-decoration: none;
+}
+
+.navhover > a{
+  color: #000000;
+}
+
+.navhover > a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.navhover > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navhover > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a {
+  cursor: pointer;
+  transition: color .5s cubic-bezier(.455,.03,.515,.955);
+}
+
+.bodylink:hover{
+  color:red;
+  text-decoration: none;
+  transition: color .5s cubic-bezier(.455,.03,.515,.955);
+}
+
+p{
+  margin-top: 2vh;
+}
+
+#menu {
+  font-size: 2.2rem;
+}
+
+#menu a {
+  font-family: "Juana-ExtraLight";
+  font-size: 20;
+}
+
+#menu-button {
+  animation: fadeIn 2s;
+}
+
+#menu-button{
+    z-index: 1002 !important;
+}
+
+#menu-button.active{
+    z-index: 1002 !important;
+}
+
+#menu{
+    z-index: 1001 !important;
+}
+
+.photoBio{
+  display: block;
+  position: fixed;
+  width: 26vw;
+  overflow: none;
+  margin-left: 36.9vw;
+  margin-right: 0;
+  margin-top: 16.5vh;
+}
+
+.col-icon{
+  display:block;
+  position: fixed;
+  margin-left: 61.9vw;
+  margin-top: 31.5vh;
+  z-index: 3;
+}
+
+.icons {
+  margin-right: 6vw;
+  max-width:  32.1vw;
+  height: auto;
+}
+
+.col-bio{
+  margin-left: 4vw;
+  margin-top: 4vh;
+  margin-right: 6vw;
+  font-family: Lato;
+  font-size: 1.25vw;
+  opacity: 70%;
+  line-height: 142%;
+}
+
+.col-resume{
+  margin-left: 4vw;
+  margin-top: 4vh;
+  margin-right: 6vw;
+  font-family: Lato;
+  font-size: 1.25vw;
+  opacity: 70%;
+  line-height: 142%;
+}
+
+.col-email{
+  margin-left: 4vw;
+  margin-top: 1vh;
+  margin-right: 6vw;
+  font-family: Lato;
+  font-size: 1.25vw;
+  opacity: 70%;
+  line-height: 142%;
+}
+
+.scroll {
+  display: block;
+  position: fixed;
+  font-size: 0.7rem;
+  left: 48.6vw;
+  top: 84vh;
+}
+
+.vl {
+  position: fixed;
+  left: 50%;
+  margin-left: -0.25px;
+  top: 75vh;
+}
+
+.bglines{
+  position: relative;
+  display: block;
+  width: 100vw;
+  max-height: 95vh;
+  z-index: 1;
+  padding: 0;
+
+}
+
+.lines {
+  border-right: 0.5px solid #262020;
+  opacity: 10%;
+  min-height: 95vh;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+
+#back2Top {
+    height: 40px;
+    padding-top:4px;
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    /* -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); */
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #D4CEFF;
+    color: #000;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

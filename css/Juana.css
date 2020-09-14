@@ -1,0 +1,63 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3947026, 2020-09-11T18:36:57-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Juana-ExtraLight by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/extra-light/
+ * 
+ * Webfont: Juana-ExtraLightIt by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/extra-light-italic/
+ * 
+ * Webfont: Juana-Light by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/light/
+ * 
+ * Webfont: Juana-LightIt by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/light-italic/
+ * 
+ * Webfont: Juana-Regular by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/regular/
+ * 
+ * Webfont: Juana-RegularIt by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/juana/regular-italic/
+ * 
+ * 
+ * Webfonts copyright: Copyright © 2020 by Eli Hernandez. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3c3a12");
+  
+@font-face {
+  font-family: 'Juana-Regular';
+  src: url('webFonts/Juana-Regular/font.woff2') format('woff2'), url('webFonts/Juana-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Juana-ExtraLightIt';
+  src: url('webFonts/Juana-ExtraLightIt/font.woff2') format('woff2'), url('webFonts/Juana-ExtraLightIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Juana-ExtraLight';
+  src: url('webFonts/Juana-ExtraLight/font.woff2') format('woff2'), url('webFonts/Juana-ExtraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Juana-Light';
+  src: url('webFonts/Juana-Light/font.woff2') format('woff2'), url('webFonts/Juana-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Juana-LightIt';
+  src: url('webFonts/Juana-LightIt/font.woff2') format('woff2'), url('webFonts/Juana-LightIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Juana-RegularIt';
+  src: url('webFonts/Juana-RegularIt/font.woff2') format('woff2'), url('webFonts/Juana-RegularIt/font.woff') format('woff');
+}
+
