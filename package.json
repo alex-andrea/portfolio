@@ -1,0 +1,38 @@
+{
+  "name": "alex-andrea",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "yarn tailwind:build && rollup -c",
+    "build:watch": "rollup -c -w",
+    "dev": "run-p tailwind:watch build:watch",
+    "start": "sirv public --single",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
+    "tailwind": "postcss src/tailwind.css -o public/build/index.css",
+    "tailwind:watch": "yarn tailwind -w",
+    "tailwind:build": "yarn tailwind --env=production",
+    "format": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.2",
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.2.1",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-scrollto": "^0.2.0",
+    "tailwindcss": "^1.8.10"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "sirv-cli": "^1.0.0",
+    "svelte-routing": "^1.4.2",
+    "yarn": "^1.22.5"
+  },
+  "homepage": "http://alex-andrea.github.io/portfolio"
+}

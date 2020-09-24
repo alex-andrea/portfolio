@@ -1,0 +1,85 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.link {
+  font-style: italic;
+  color: #b19f7c;
+  transition: color 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.link:hover {
+  color: red;
+}
+
+.menu-link {
+  @apply text-2xl uppercase italic font-light my-8 cursor-pointer text-center;
+}
+
+@screen sm {
+  .menu-link {
+    @apply text-3xl my-12;
+  }
+}
+
+@screen md {
+  .menu-link {
+    @apply text-6xl my-16;
+  }
+}
+
+.portofolio-list-item {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  font-size: 14px;
+}
+
+.portofolio-logo {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index: 100000;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.home-top,
+.portofolio-top {
+  height: 75vh;
+  min-height: none;
+}
+
+@screen md {
+  .home-top,
+  .portofolio-top {
+    min-height: 650px;
+  }
+}
+
+@screen md {
+  .portofolio-list-item {
+    font-size: 19px;
+  }
+
+  .portofolio-logo {
+    transform: translate(0, -50%);
+    left: 30px;
+  }
+
+  .portofolio-menu-header {
+    background: #fffefe !important;
+  }
+}
+
+.scroller {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -30%);
+  height: 102px;
+}
