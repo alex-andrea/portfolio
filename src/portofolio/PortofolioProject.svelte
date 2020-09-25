@@ -16,7 +16,7 @@
   <img
     src="./img/home/scroll.png"
     alt="scroll"
-    class="absolute hidden md:block scroller" />
+    class="absolute hidden md:block scroller" style="top:-13px;"/>
   <div class="w-full md:w-1/2 flex flex-col px-6">
     <div class="text-3xl mb-12">
       <b>{type}:</b>
@@ -25,7 +25,7 @@
     <div class="font-lato text-xl">
       <slot name="description" />
     </div>
-    <div class="mt-16s" style="margin-top: 1.5rem;"><a href={prototype}>{label}</a></div>
+    <div class="mt-16s" style="margin-top: 2.5rem;"><a href={prototype} target="_blank" style="font-size:1.3rem;">{label}</a></div>
   </div>
   <div
     class="w-full md:w-1/2 flex flex-row justify-between md:justify-around px-6

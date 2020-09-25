@@ -20,7 +20,6 @@
   #logo {
     position: absolute;
     top: -2px;
-    left: -6%;
     transform: translateY(-50%) scale(0.8);
     z-index: 1;
   }
@@ -57,8 +56,8 @@
       <div class="flex-none relative flex justify-between">
         <div>
           <img
-            src="./img/home/logoHalf.svg"
-            id="logo"
+            src="./img/home/logoHalf.png"
+            id="logo" style="left: -6%;"
             alt="ALEX ANDREA - UX/UI DESIGN SEATTLE, WA"
             class="w-full md:w-1/2" />
         </div>
@@ -98,11 +97,11 @@
             superfluity, I strive to create only what is meaningful, deliberate,
             and delightful.
           </div>
-          <div class="text-xl mt-20">
-            <a href="/resume.pdf" class="link">MY RÉSUMÉ →</a>
+          <div class="text-xl mt-20" style="margin-top:3rem;">
+            <a href="/resume.pdf" target="_blank" class="link">MY RÉSUMÉ →</a>
           </div>
           <div class="text-xl mt-4">
-            <a href="email:alandrea@uw.edu" class="link">EMAIL ME →</a>
+            <a href="mailto:alandrea@uw.edu" class="link">EMAIL ME →</a>
           </div>
         </div>
       </div>
@@ -159,19 +158,20 @@
         <div>Let’s <b>create</b> something <b>beautiful.</b></div>
         <div>
           Email me → <a
-            href="email:alandrea@uw.edu"
+            href="mailto:alandrea@uw.edu"
             class="font-semibold link">alandrea@uw.edu</a> →
         </div>
         <div>
           to get <b>started.</b>
           <img
-            src="./img/home/peace-sign.png"
+            src="./img/home/peace-sign.svg"
             alt="peace sign"
-            class="inline ml-2 h-6 md:ml-4 sm:h-10 md:h-12" />
+            class="inline ml-2 h-6 md:ml-4 sm:h-10 md:h-12"
+            style="margin-bottom:15px;" />
         </div>
       </div>
       <img
-        src="./img/home/logoWhole.svg"
+        src="./img/home/logoWhole.png"
         id="hero"
         alt="ALEX ANDREA - UX/UI DESIGN SEATTLE, WA" />
     </div>

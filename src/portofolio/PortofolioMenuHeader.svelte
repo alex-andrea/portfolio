@@ -30,7 +30,7 @@
   <div
     class="flex-none h-20 flex items-center justify-end px-4 md:px-12 {theme} portofolio-menu-header">
     <img
-      src="./img/home/logoHalf.svg"
+      src="./img/home/logoHalf.png"
       id="logo"
       alt="ALEX ANDREA - UX/UI DESIGN SEATTLE, WA"
       class="portofolio-logo" />

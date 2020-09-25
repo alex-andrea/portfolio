@@ -20,7 +20,7 @@
   aside {
     background: #000000;
     color: #fff;
-    z-index: 100;
+    z-index: 1000000;
     width: 100%;
     right: -100%;
     transition: right 0.6s ease-in-out;
@@ -56,7 +56,7 @@
     <div class="container flex mx-auto py-4 mt-2 items-center">
       <div
         class="flex-grow flex justify-center content-center font-light text-sm"
-        style="opacity: 0.7; pointer-events: none;">
+        style="opacity: 0.7; pointer-events: none; font-family:Lato;">
         SELECTED WORKS
       </div>
     </div>

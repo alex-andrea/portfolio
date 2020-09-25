@@ -163,7 +163,7 @@
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
       <div>
         <div class="text-3xl"><b>Design System:</b></div>
-        <div class="mt-16 font-lato font-light">
+        <div class="mt-16 font-lato font-light text-xl">
           Alongside the finished interface designs, I produced a Zeplin file
           documenting all colors, typography, and components to keep the designs
           as consistent as possible and to help the development team to
