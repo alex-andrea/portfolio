@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Juana;
+  src: url(fonts/Juana-ExtraLightIt/font.woff);
+  font-weight: lighter;
+  font-style: italic;
+}
+
 html,
 body {
   font-family: 'Juana', sans-serif;
@@ -120,5 +127,5 @@ body {
 .bg-lines {
   background-image: url('/img/home/lines.png');
   background-position: center center;
-  background-size: 100% auto;
+  background-size: 140% auto;
 }

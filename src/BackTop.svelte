@@ -13,7 +13,7 @@
   <div
     transition:fade={{ duration: 500 }}
     class="fixed text-xs font-light cursor-pointer hidden md:block z-10"
-    style="right: 0; bottom: 85px; transform: rotate(-90deg);"
+    style="right: 0; bottom: 85px; transform: rotate(-90deg); font-family: sans-serif;"
     on:click={() => animateScroll.scrollToTop({ duration: 1000 })}>
     BACK TO TOP
   </div>

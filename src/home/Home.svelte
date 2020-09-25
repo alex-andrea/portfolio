@@ -20,13 +20,14 @@
   #logo {
     position: absolute;
     top: -2px;
+    left: -6%;
     transform: translateY(-50%) scale(0.8);
     z-index: 1;
   }
 
   #menu-container {
     position: relative;
-    left: 30px;
+    left: 15px;
     top: 10px;
   }
 
@@ -98,10 +99,10 @@
             and delightful.
           </div>
           <div class="text-xl mt-20">
-            <a href="/resume" class="link">MY RÉSUMÉ →</a>
+            <a href="/resume.pdf" class="link">MY RÉSUMÉ →</a>
           </div>
           <div class="text-xl mt-4">
-            <a href="/email" class="link">EMAIL ME →</a>
+            <a href="email:alandrea@uw.edu" class="link">EMAIL ME →</a>
           </div>
         </div>
       </div>

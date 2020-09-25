@@ -152,7 +152,7 @@
     </div>
 
     <div class="text-center mt-12">
-      <a href="/" class="text-xl">Figma Prototype →</a>
+      <a href="https://www.figma.com/proto/4I5pHmJb9yv7HBheAuLNjH/Action-Design-Network?node-id=421%3A0&viewport=574%2C507%2C0.10546174645423889&scaling=scale-down-width" class="text-xl">Figma Prototype →</a>
     </div>
   </div>
 
