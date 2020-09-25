@@ -22,7 +22,10 @@
     title="Happy Elephant"
     roles={['Concept', 'UX Design', 'Prototyping', 'UI Design']}
     deliverables={['Wireframes']}
-    tools={['sketch']}>
+    tools={['sketch']}
+    prototype="https://www.figma.com/proto/4I5pHmJb9yv7HBheAuLNjH/Action-Design-Network?node-id=421%3A0&viewport=574%2C507%2C0.10546174645423889&scaling=scale-down-width"
+    label="InVision Prototype →"
+    >
     <div slot="description">
       <div>
         Happy Elephant is a website concept I designed over the course of one

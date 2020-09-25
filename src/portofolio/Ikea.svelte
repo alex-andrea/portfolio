@@ -20,7 +20,10 @@
     title="Ikea"
     roles={['UX Design', 'Prototyping', 'UI Design', 'User Testing']}
     deliverables={['Wireframes', 'Hi-Fi Screens']}
-    tools={['sketch']}>
+    tools={['sketch']}
+    prototype="https://www.figma.com/proto/4I5pHmJb9yv7HBheAuLNjH/Action-Design-Network?node-id=421%3A0&viewport=574%2C507%2C0.10546174645423889&scaling=scale-down-width"
+    label="InVision Prototype →"
+    >
     <div slot="description">
       I worked in a group of three to evaluate and redesign the IKEA website
       over the course of two weeks. We spent one week conducting market research

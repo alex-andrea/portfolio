@@ -29,7 +29,10 @@
     title="Action Design Network"
     roles={['User Testing', 'Prototyping', 'UI Design']}
     deliverables={['Design Principles', 'Hi-Fi Screens', 'Design System']}
-    tools={['figma', 'zeplin']}>
+    tools={['figma', 'zeplin']}
+    prototype="https://www.figma.com/proto/4I5pHmJb9yv7HBheAuLNjH/Action-Design-Network?node-id=421%3A0&viewport=574%2C507%2C0.10546174645423889&scaling=scale-down-width"
+    label="Figma Prototype →"
+    >
     <div slot="description">
       <div>
         Action Design Network is a non-profit organization that promotes the use

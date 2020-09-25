@@ -4,6 +4,8 @@
   export let roles = [];
   export let deliverables = [];
   export let tools = [];
+  export let prototype;
+  export let label;
 </script>
 
 <style>
@@ -23,7 +25,7 @@
     <div class="font-lato text-xl">
       <slot name="description" />
     </div>
-    <div class="mt-16">InVision Prototype →</div>
+    <div class="mt-16s" style="margin-top: 1.5rem;"><a href={prototype}>{label}</a></div>
   </div>
   <div
     class="w-full md:w-1/2 flex flex-row justify-between md:justify-around px-6
