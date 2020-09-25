@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Juana;
+  src: url(fonts/Juana-ExtraLightIt/font.woff);
+  font-weight: lighter;
+  font-style: italic;
+}
+
 html,
 body {
   font-family: 'Juana', sans-serif;
