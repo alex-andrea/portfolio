@@ -56,7 +56,7 @@
       <div class="flex-none relative flex justify-between">
         <div>
           <img
-            src="./img/home/logoHalf.png"
+            src="./img/home/logoHalf.svg"
             id="logo" style="left: -6%;"
             alt="ALEX ANDREA - UX/UI DESIGN SEATTLE, WA"
             class="w-full md:w-1/2" />
@@ -171,7 +171,7 @@
         </div>
       </div>
       <img
-        src="./img/home/logoWhole.png"
+        src="./img/home/logoWhole.svg"
         id="hero"
         alt="ALEX ANDREA - UX/UI DESIGN SEATTLE, WA" />
     </div>
