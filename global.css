@@ -28,10 +28,21 @@
 
 @font-face {
   font-family: Juana;
-  src: url(fonts/Juana-ExtraLightIt/font.woff) format('woff'), url(';fonts/Juana-ExtraLightIt.woff2') format('woff2');
+  src: url(fonts/Juana-ExtraLightIt/font.woff) format('woff'), url(fonts/Juana-ExtraLightIt.woff2) format('woff2');
   font-weight: lighter;
   font-style: italic;
 }
+
+@font-face{
+  font-family: Juana-Light;
+  src: url(fonts/Juana-Light/font.woff) format('woff'), url(fonts/Juana-Light/font.woff2) format('woff2');
+}
+
+@font-face{
+  font-family: Lato-Hairline;
+  src: url(fonts/Lato-Hairline/font.woff) format('woff');
+}
+
 
 html,
 body {
