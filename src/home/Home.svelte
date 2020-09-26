@@ -34,7 +34,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;
-    opacity: 70%;
+    opacity: 0.7;
   }
 
   #hero {
@@ -77,7 +77,7 @@
         style="font-family: Lato;">
         <div class="w-0 hidden md:w-1/3 md:block" />
         <div class="w-full md:w-1/3 flex flex-col justify-center">
-          <img src="./img/home/poppies.jpg" alt="Andrea" id="poppies" style="opacity:95%;"/>
+          <img src="./img/home/poppies.jpg" alt="Andrea" id="poppies" style="opacity:0.95;"/>
           <div class="mt-2 md:hidden">
             <SocialLinks />
           </div>
@@ -85,7 +85,7 @@
         <div class="w-0 hidden md:w-1/3 md:block pl-8">
           <div
             class="flex justify-between"
-            style="position: relative; left: -15%; width: 115%; opacity:80%;">
+            style="position: relative; left: -15%; width: 115%; opacity: 0.8;">
             <img src="./img/icons/LSP.svg" alt="LSP" />
             <img src="./img/icons/seattle.svg" alt="seattle" />
             <img src="./img/icons/dragon.svg" alt="dragon" />

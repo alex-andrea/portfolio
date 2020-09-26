@@ -40,7 +40,7 @@
 
 @font-face{
   font-family: Lato-Hairline;
-  src: url(fonts/Lato-Hairline/font.woff) format('woff');
+  src: url(fonts/Lato-Hairline/font.woff) format('woff'), url(fonts/Lato-Hairline/font.woff2) format('woff2');
 }
 
 
