@@ -1,4 +1,5 @@
 <script>
+
   import { navigate } from 'svelte-routing';
 
   import { fly } from 'svelte/transition';
@@ -17,6 +18,7 @@
 </script>
 
 <style>
+
   aside {
     background: #000000;
     color: #fff;
@@ -61,7 +63,7 @@
       </div>
     </div>
   </div>
-  <div class="flex-grow flex flex-col items-center justify-center px-4">
+  <div class="flex-grow flex flex-col items-center justify-center px-4" style="font-family:Juana-ExtraLightIt;">
     {#if $isMenuOpen}
       <div
         on:click={() => navigateTo('/adn')}
