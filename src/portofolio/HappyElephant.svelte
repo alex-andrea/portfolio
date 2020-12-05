@@ -23,8 +23,8 @@
     roles={['Concept', 'UX Design', 'Prototyping', 'UI Design']}
     deliverables={['Wireframes']}
     tools={['sketch']}
-    prototype="https://www.figma.com/proto/4I5pHmJb9yv7HBheAuLNjH/Action-Design-Network?node-id=421%3A0&viewport=574%2C507%2C0.10546174645423889&scaling=scale-down-width"
-    label="InVision Prototype →"
+    prototype="https://www.figma.com/proto/qaRJQREbm6A5xz0eO8ePAg/Prototype?node-id=1%3A4&viewport=361%2C350%2C0.8954868316650391&scaling=scale-down"
+    label="Figma Prototype →"
     >
     <div slot="description">
       <div>
