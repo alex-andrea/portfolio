@@ -43,6 +43,15 @@
   src: url(fonts/Lato-Hairline/font.woff) format('woff'), url(fonts/Lato-Hairline/font.woff2) format('woff2');
 }
 
+.link{
+  font-family: 'Juana-Light';
+  font-weight: lighter !important;
+}
+
+.menu-link{
+  font-family: 'Juana-ExtraLightIt' !important;
+  font-weight: lighter !important;
+}
 
 html,
 body {
