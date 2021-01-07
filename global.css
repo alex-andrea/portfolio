@@ -53,6 +53,14 @@
   font-weight: lighter !important;
 }
 
+@media (min-width: 768px) {
+  .menu-link {
+    font-size: 4.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
 html,
 body {
   font-family: 'Juana', sans-serif;
